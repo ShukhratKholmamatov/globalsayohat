@@ -1,37 +1,76 @@
-const navItems = document.querySelectorAll('.nav-item');
-const airplane = document.querySelector('.airplane');
-let currentIndex = 0;
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+const menuBtnIcon = menuBtn.querySelector("i");
 
-function moveAirplaneTo(item, newIndex = currentIndex) {
-  const itemRect = item.getBoundingClientRect();
-  const navRect = document.querySelector('.nav-menu').getBoundingClientRect();
+menuBtn.addEventListener("click", (e) => {
+  navLinks.classList.toggle("open");
 
-  const offsetLeft = itemRect.left - navRect.left + itemRect.width / 2 - 10;
-  airplane.style.left = `${offsetLeft}px`;
-
-  if (newIndex < currentIndex) {
-    airplane.classList.add('flip');
-  } else {
-    airplane.classList.remove('flip');
-  }
-
-  currentIndex = newIndex;
-}
-
-// Add click listener
-navItems.forEach((item, index) => {
-  item.addEventListener('click', () => {
-    document.querySelector('.nav-item.active')?.classList.remove('active');
-    item.classList.add('active');
-    moveAirplaneTo(item, index);
-  });
+  const isOpen = navLinks.classList.contains("open");
+  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
 });
 
-// On window load and resize, update airplane position
-function updateOnResize() {
-  const activeItem = document.querySelector('.nav-item.active');
-  moveAirplaneTo(activeItem);
-}
+navLinks.addEventListener("click", (e) => {
+  navLinks.classList.remove("open");
+  menuBtnIcon.setAttribute("class", "ri-menu-line");
+});
 
-window.addEventListener('load', updateOnResize);
-window.addEventListener('resize', updateOnResize);
+const scrollRevealOption = {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1000,
+};
+
+ScrollReveal().reveal(".header__image img", {
+  ...scrollRevealOption,
+  origin: "right",
+});
+ScrollReveal().reveal(".header__content p", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".header__content h1", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".header__btns", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
+ScrollReveal().reveal(".destination__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+ScrollReveal().reveal(".showcase__image img", {
+  ...scrollRevealOption,
+  origin: "left",
+});
+ScrollReveal().reveal(".showcase__content h4", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".showcase__content p", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".showcase__btn", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
+ScrollReveal().reveal(".banner__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+ScrollReveal().reveal(".discover__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+});
