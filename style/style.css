@@ -157,11 +157,11 @@ header::before {
   position: absolute;
   content: "";
   height: 100%;
-  width: calc(100% - 2rem);
+  width: 120%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("assets/header-bg.jpg");
+  background-image: url("/assets/Uzbekistan7.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
