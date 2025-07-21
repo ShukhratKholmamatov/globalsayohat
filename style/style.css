@@ -598,9 +598,105 @@ footer {
   text-align: center;
 }
 
+.map{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.map #map{
+  width: 80%;
+}
+
+.yt_video{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.st_contact{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #1c83be;
+      outline: none;
+      box-shadow: 0 0 5px rgba(116, 235, 213, 0.5);
+    }
+
+    button {
+      width: 100%;
+      background: #1b6fa0;
+      border: none;
+      color: white;
+      font-size: 18px;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #6996d8;
+    }
+
+    .success {
+      margin-top: 10px;
+      text-align: center;
+      color: green;
+    }
+
+    .error {
+      margin-top: 10px;
+      text-align: center;
+      color: red;
+    }
+
+
 @media (width > 540px) {
   .destination__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .map{
+    height: auto;
   }
 
   .journey__grid {
