@@ -44,8 +44,16 @@
         O‘zbekiston Respublikasining barcha viloyatlaridagi mehmonxonalar
       </p>
 
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-city="all">Barchasi</button>
+        <button class="filter-btn" data-city="toshkent">Toshkent shahridagi mehmonxonalari</button>
+        <button class="filter-btn" data-city="samarqand">Samarqand viloyatidagi mehmonxonalari</button>
+        <button class="filter-btn" data-city="buxoro">Buxoro viloyatidagi mehmonxonalari</button>
+        <button class="filter-btn" data-city="xiva">Xiva shahridagi mehmonxonalari</button>
+      </div>
+
       <div class="destination__grid">
-        <div class="destination__card">
+        <div class="destination__card" data-city="samarqand">
           <img src="assets/Oq_masjid.png" alt="destination" />
           <div class="destination__card__details">
             <div>
@@ -58,7 +66,7 @@
             </div>
           </div>
         </div>
-        <div class="destination__card">
+        <div class="destination__card" data-city="samarqand">
           <img src="assets/tuya.png" alt="destination" />
           <div class="destination__card__details">
             <div>
@@ -71,7 +79,7 @@
             </div>
           </div>
         </div>
-        <div class="destination__card">
+        <div class="destination__card" data-city="samarqand">
           <img src="assets/eski_gumbaz.png" alt="destination" />
           <div class="destination__card__details">
             <div>
@@ -88,7 +96,7 @@
 
       <!-- second row tours -->
 
-      <div class="destination__grid">
+      <div class="destination__grid" data-city="buxoro">
         <div class="destination__card">
           <img src="assets/Oq_masjid.png" alt="destination" />
           <div class="destination__card__details">
@@ -102,7 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="destination__card">
+        <div class="destination__card" data-city="buxoro">
           <img src="assets/tuya.png" alt="destination" />
           <div class="destination__card__details">
             <div>
@@ -115,7 +123,7 @@
             </div>
           </div>
         </div>
-        <div class="destination__card">
+        <div class="destination__card" data-city="buxoro">
           <img src="assets/eski_gumbaz.png" alt="destination" />
           <div class="destination__card__details">
             <div>
@@ -133,7 +141,7 @@
       <!-- third row tours -->
 
       <div class="destination__grid">
-        <div class="destination__card">
+        <div class="destination__card" data-city="toshkent">
           <img src="assets/Oq_masjid.png" alt="destination" />
           <div class="destination__card__details">
             <div>
@@ -146,7 +154,7 @@
             </div>
           </div>
         </div>
-        <div class="destination__card">
+        <div class="destination__card" data-city="toshkent">
           <img src="assets/tuya.png" alt="destination" />
           <div class="destination__card__details">
             <div>
@@ -159,7 +167,7 @@
             </div>
           </div>
         </div>
-        <div class="destination__card">
+        <div class="destination__card" data-city="toshkent">
           <img src="assets/eski_gumbaz.png" alt="destination" />
           <div class="destination__card__details">
             <div>
@@ -172,6 +180,245 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- third row tours -->
+
+      <div class="destination__grid">
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/Oq_masjid.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Farovon Khiva Hotel</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/tuya.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Arkanchi Hotel</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Said Islom Khoja</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Arda Oasis Hotel</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Erkin Palace Hotel</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Karvon Saroy Hotel</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Khiva Khan Hotel</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/Oq_masjid.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Hotel Shams Khiva</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/tuya.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Hotel Polvon qori boutique</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Hotel Khiva Palace</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Mahdiy</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Orient Star Khiva Hotel</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Hotel Asia Khiva</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Hotel New Star Boutique</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Umar Hotel</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Annex Hotel Khiva</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="destination__card" data-city="xiva">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Carousel</h4>
+              <p>1 mln 500 ming so'm</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+      
       </div>
 
     </section>

@@ -65,7 +65,7 @@ ScrollReveal().reveal(".banner__card", {
 });
 
 ScrollReveal().reveal(".discover__card", {
-  ...scrollRevealOption,
+  // ...scrollRevealOption,
   interval: 500,
 });
 
@@ -74,3 +74,26 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 20,
   loop: true,
 });
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.destination__card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedCity = button.getAttribute('data-city');
+
+      // Remove 'active' class from all and add to current
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Show/Hide cards based on filter
+      cards.forEach(card => {
+        const cardCity = card.getAttribute('data-city');
+        if (selectedCity === 'all' || cardCity === selectedCity) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
