@@ -16,398 +16,377 @@
     <script src="/script/mapdata.js"></script>
     <script src="/script/countrymap.js"></script>
   </head>
-  <body>
-    <nav>
-      <div class="nav__header">
-        <div class="nav__logo">
-          <a href="index.html" class="logo"><img width="80" height="80" src="/assets/global sayohat.png" alt=""></a>
-        </div>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-line"></i>
-        </div>
+<!-- ...head as before... -->
+<body>
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="index.html" class="logo">
+          <img width="80" height="80" src="/assets/global sayohat.png" alt="">
+        </a>
       </div>
-      <ul class="nav__links" id="nav-links">
-        <li><a href="index.html">ASOSIY</a></li>
-        <li><a href="about.html">BIZ HAQIMIZDA</a></li>
-        <li><a href="tour.html">TUR PAKETLAR</a></li>
-        <li><a href="hotel.html">MEHMONXONALAR</a></li>
-        <li><a href="contact.html">BOG'LANISH</a></li>
-        <li><a href="contact.html">Sayohatni bron qilish</a></li>
-      </ul>
-      <div class="nav__btns">
-        <button class="btn">BRON QILISH</button>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
       </div>
-    </nav>
-
-    <header id="home">  
-      <div class="header__container">
-        <div class="header__content">
-          <p>SAYOHATINGIZNI yangi bosqichga olib chiqing</p>
-          <h1>O‘zbekiston sehrini his eting!</h1>
-          <div class="header__btns">
-            <button class="btn">Hozir band qilish</button>
-            <a href="https://youtu.be/mk68RcnQVq4?si=wPyiStwlqlGKgNWK">
-              <span><i class="ri-play-circle-fill"></i></span>
-            </a>
-          </div>
-        </div>
-        <div class="header__image">
-          <img src="assets/header.png" alt="header" />
-        </div>
-      </div>
-    </header>
-
-    <section class="section__container journey__container" id="tour">
-      <h2 class="section__header">O‘zbekiston Haqida Qiziqarli Faktlar</h2>
-      <!-- <p class="section__description">
-        
-      </p> -->
-      <div class="journey__grid">
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-bookmark-3-line"></i></span>
-            <h4>Toshkent metropoliteni</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-bookmark-3-line"></i></span>
-            <h4>Toshkent metropoliteni</h4>
-            <p>
-              Toshkent metropoliteni — Markaziy Osiyo mintaqasidagi birinchi metro hisoblanadi.
-            </p>
-          </div>
-        </div>
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-landscape-fill"></i></span>
-            <h4>O‘zbekiston qurolli kuchlari</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-landscape-fill"></i></span>
-            <h4>O‘zbekiston qurolli kuchlari</h4>
-            <p>
-              Markaziy Osiyo mintaqasida esa O‘zbekiston harbiy qudrati bo‘yicha birinchi o‘rinda turadi — Qozog‘iston, Qirg‘iziston, Tojikiston va Turkmanistondan oldinda.
-            </p>
-          </div>
-        </div>
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-map-2-line"></i></span>
-            <h4>O‘zbekistonning qadimiy shahri</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-map-2-line"></i></span>
-            <h4>O‘zbekistonning qadimiy shahri</h4>
-            <p>
-              O‘zbekistonning eng qadimiy shahri Samarqand — Rim shahri bilan tengdosh hisoblanadi.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- second row -->
-
-      <div class="journey__grid">
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-bookmark-3-line"></i></span>
-            <h4>Oʻzbek xalqi haqida qisqacha</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-bookmark-3-line"></i></span>
-            <h4>Oʻzbek xalqi haqida qisqacha</h4>
-            <p>
-              Oʻzbekiston koʻp millatli davlat. Aholining asosiy qismini (71% dan ortigʻini) oʻzbeklar tashkil etadi. Ular janubiy yevropoid irqiga mansub boʻlib, tarkibida mongoloid unsurlar ham mavjud.
-            </p>
-          </div>
-        </div>
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-landscape-fill"></i></span>
-            <h4>Oʻzbekistondagi tillar</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-landscape-fill"></i></span>
-            <h4>Oʻzbekistondagi tillar</h4>
-            <p>
-              Oʻzbekistonda davlat tili — oʻzbek tili. Rus tili keng tarqalgan, ayrim hududlarda tojik tili ham ishlatiladi.
-            </p>
-          </div>
-        </div>
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-map-2-line"></i></span>
-            <h4>Oʻzbekiston aholisi tarkibi</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-map-2-line"></i></span>
-            <h4>Oʻzbekiston aholisi tarkibi</h4>
-            <p>
-              Oʻzbekistonda qozoq, qirgʻiz, turkman, uygʻur, tatar, tojik (4,7%), rus va boshqa xalqlar (16%) yashaydi. Shuningdek, koreys, arab, loʻli, yahudiy va boshqalar ham bor. Aholi soni tez ortmoqda.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- third row -->
-
-      <div class="journey__grid">
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-bookmark-3-line"></i></span>
-            <h4>Oʻzbekiston iqlimi</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-bookmark-3-line"></i></span>
-            <h4>Oʻzbekiston iqlimi</h4>
-            <p>
-              Oʻzbekiston iqlimi kontinental: issiq yoz, sovuq qish. Yogʻin kam, asosan bahor va qishda. Sayohat uchun eng qulay fasllar — bahor va kuz.
-            </p>
-          </div>
-        </div>
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-landscape-fill"></i></span>
-            <h4>Toshkent haqida</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-landscape-fill"></i></span>
-            <h4>Toshkent haqida</h4>
-            <p>
-              Toshkent — Oʻzbekiston poytaxti va eng yirik shahri. 2000 yillik tarixga ega, iqtisodiy va madaniy markaz. Bu yerda 3 millionga yaqin aholi yashaydi.
-            </p>
-          </div>
-        </div>
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-map-2-line"></i></span>
-            <h4>Toshkent shahri tumanlari</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-map-2-line"></i></span>
-            <h4>Toshkent shahri tumanlari</h4>
-            <p>
-              Toshkent shahri 11 ta tumanlardan iborat: Olmazor, Bektemir, Mirobod, Mirzo Ulug‘bek, Sergeli, Chilonzor, Shayxontohur, Yunusobod, Yakkasaroy, Yashnobod, Uchtepa.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <div class="map">
-      <div id="map"></div>
     </div>
-      
+    <ul class="nav__links" id="nav-links">
+      <li><a data-translate="main_nav" href="index.html">ASOSIY</a></li>
+      <li><a data-translate="about_nav" href="about.html">BIZ HAQIMIZDA</a></li>
+      <li><a data-translate="tour_nav" href="tour.html">TUR PAKETLAR</a></li>
+      <li><a data-translate="hotel_nav" href="hotel.html">MEHMONXONALAR</a></li>
+      <li><a data-translate="contact_nav" href="contact.html">BOG'LANISH</a></li>
+      <li><a data-translate="book_nav" href="contact.html">Sayohatni bron qilish</a></li>
+    </ul>
+    <div class="nav__btns">
+      <button class="btn" data-translate="bron">BRON QILISH</button>
+    </div>
+  </nav>
 
+  <div id="langSwitcher">
+    <button onclick="setLang('uz')">🇺🇿</button>
+    <button onclick="setLang('ru')">🇷🇺</button>
+  </div>
 
-    <section class="section__container showcase__container" id="package">
-      <div class="showcase__image">
-        <img src="assets/tourist_girl.jpg" alt="showcase" />
-      </div>
-      <div class="showcase__content">
-        <h4>O‘ZBEKISTON</h4>
-        <p>
-          O‘zbekistonning rasmiy nomi — O‘zbekiston Respublikasi. Uning poytaxti — Toshkent shahri. Mamlakatning umumiy hududi 447,4 ming kvadrat kilometrni tashkil qiladi. Davlat tuzumi huquqiy demokratik tizim asosida qurilgan.
-          2015-yilgi ma’lumotlarga ko‘ra, aholi soni 37,7 million kishini tashkil etadi. 2025-yilga kelib, mehnatga layoqatli aholining ulushi umumiy aholining 60,5 foizini tashkil etishi kutilmoqda.
-          Respublikaning davlat tili — o‘zbek tili. Davlat rahbari — Prezident Shavkat Miromonovich Mirziyoyev. Pul birligi — O‘zbekiston so‘mi.
-          O‘zbekiston GMT +5 vaqt zonasida joylashgan. Mamlakatning xalqaro telefon kodi +998, internetdagi yuqori darajadagi domeni esa “.uz” hisoblanadi. Elektr tarmog‘ining kuchlanishi 220 volt, chastotasi esa 50 Gts. O‘zbekistonda avtomobillar harakati o‘ng tomonlama hisoblanadi.
-        </p>
-        <p>
-          O‘zbekistonda boshqa turkiy tillarda so‘zlashuvchi xalqlar vakillari ham yashaydi. Ular qatoriga qozoqlar, qirg‘izlar, turkmanlar, uyg‘urlar va tatarlar kiradi. Bundan tashqari, respublikada fors tillari guruhiga mansub til — tojik tilida so‘zlashuvchi tojiklar katta jamoani tashkil etadi (taxminan 4,7%).
-          Aholining muhim qismini ruslar va rus tilida so‘zlashuvchi boshqa xalqlar tashkil qiladi. Ularning umumiy ulushi respublika aholining qariyb 16 foiziga teng. Shuningdek, O‘zbekistonda koreyslar, arablar, Markaziy Osiyo lo‘lilari, yahudiylar, nemislar va boshqa ko‘plab millat vakillari ham istiqomat qiladi.
-          Umuman olganda, O‘zbekiston aholisi soni yildan-yilga tez sur’atlarda ortib bormoqda.
-        </p>
-        <div class="showcase__btn">
-          <button class="btn">
-            Hoziroq band qiling!
-            <span><i class="ri-arrow-right-line"></i></span>
-          </button>
+  <header id="home">
+    <div class="header__container">
+      <div class="header__content">
+        <p data-translate="index1">SAYOHATINGIZNI yangi bosqichga olib chiqing</p>
+        <h1 data-translate="index2">O‘zbekiston sehrini his eting!</h1>
+        <div class="header__btns">
+          <button class="btn" data-translate="index3">Hozir band qilish</button>
+          <a href="https://youtu.be/mk68RcnQVq4?si=wPyiStwlqlGKgNWK">
+            <span><i class="ri-play-circle-fill"></i></span>
+          </a>
         </div>
       </div>
-    </section>
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
+      </div>
+    </div>
+  </header>
 
-    
+  <section class="section__container journey__container" id="tour">
+    <h2 class="section__header" data-translate="facts_title">O‘zbekiston Haqida Qiziqarli Faktlar</h2>
+    <div class="journey__grid">
+      <div class="journey__card">
+        <div class="journey__card__bg">
+          <span><i class="ri-bookmark-3-line"></i></span>
+          <h4 data-translate="fact_metro_title">Toshkent metropoliteni</h4>
+        </div>
+        <div class="journey__card__content">
+          <span><i class="ri-bookmark-3-line"></i></span>
+          <h4 data-translate="fact_metro_title">Toshkent metropoliteni</h4>
+          <p data-translate="fact_metro_descr">Toshkent metropoliteni — Markaziy Osiyo mintaqasidagi birinchi metro hisoblanadi.</p>
+        </div>
+      </div>
+      <div class="journey__card">
+        <div class="journey__card__bg">
+          <span><i class="ri-landscape-fill"></i></span>
+          <h4 data-translate="fact_army_title">O‘zbekiston qurolli kuchlari</h4>
+        </div>
+        <div class="journey__card__content">
+          <span><i class="ri-landscape-fill"></i></span>
+          <h4 data-translate="fact_army_title">O‘zbekiston qurolli kuchlari</h4>
+          <p data-translate="fact_army_descr">Markaziy Osiyo mintaqasida esa O‘zbekiston harbiy qudrati bo‘yicha birinchi o‘rinda turadi — Qozog‘iston, Qirg‘iziston, Tojikiston va Turkmanistondan oldinda.</p>
+        </div>
+      </div>
+      <div class="journey__card">
+        <div class="journey__card__bg">
+          <span><i class="ri-map-2-line"></i></span>
+          <h4 data-translate="fact_oldcity_title">O‘zbekistonning qadimiy shahri</h4>
+        </div>
+        <div class="journey__card__content">
+          <span><i class="ri-map-2-line"></i></span>
+          <h4 data-translate="fact_oldcity_title">O‘zbekistonning qadimiy shahri</h4>
+          <p data-translate="fact_oldcity_descr">O‘zbekistonning eng qadimiy shahri Samarqand — Rim shahri bilan tengdosh hisoblanadi.</p>
+        </div>
+      </div>
+    </div>
+    <div class="journey__grid">
+      <div class="journey__card">
+        <div class="journey__card__bg">
+          <span><i class="ri-bookmark-3-line"></i></span>
+          <h4 data-translate="fact_people_title">Oʻzbek xalqi haqida qisqacha</h4>
+        </div>
 
-    
+        <div class="journey__card__content">
+          <span><i class="ri-bookmark-3-line"></i></span>
+          <h4 data-translate="fact_people_title">Oʻzbek xalqi haqida qisqacha</h4>
+          <p data-translate="fact_people_descr">Oʻzbekiston koʻp millatli davlat. Aholining asosiy qismini (71% dan ortigʻini) oʻzbeklar tashkil etadi. Ular janubiy yevropoid irqiga mansub boʻlib, tarkibida mongoloid unsurlar ham mavjud.</p>
+        </div>
+      </div>
+      <div class="journey__card">
+        <div class="journey__card__bg">
+          <span><i class="ri-landscape-fill"></i></span>
+          <h4 data-translate="fact_langs_title">Oʻzbekistondagi tillar</h4>
+        </div>
+        <div class="journey__card__content">
+          <span><i class="ri-landscape-fill"></i></span>
+          <h4 data-translate="fact_langs_title">Oʻzbekistondagi tillar</h4>
+          <p data-translate="fact_langs_descr">Oʻzbekistonda davlat tili — oʻzbek tili. Rus tili keng tarqalgan, ayrim hududlarda tojik tili ham ishlatiladi.</p>
+        </div>
+      </div>
+      <div class="journey__card">
+        <div class="journey__card__bg">
+          <span><i class="ri-map-2-line"></i></span>
+          <h4 data-translate="fact_population_title">Oʻzbekiston aholisi tarkibi</h4>
+        </div>
+        <div class="journey__card__content">
+          <span><i class="ri-map-2-line"></i></span>
+          <h4 data-translate="fact_population_title">Oʻzbekiston aholisi tarkibi</h4>
+          <p data-translate="fact_population_descr">Oʻzbekistonda qozoq, qirgʻiz, turkman, uygʻur, tatar, tojik (4,7%), rus va boshqa xalqlar (16%) yashaydi. Shuningdek, koreys, arab, loʻli, yahudiy va boshqalar ham bor. Aholi soni tez ortmoqda.</p>
+        </div>
+      </div>
+    </div>
+    <div class="journey__grid">
+      <div class="journey__card">
+        <div class="journey__card__bg">
+          <span><i class="ri-bookmark-3-line"></i></span>
+          <h4 data-translate="fact_climate_title">Oʻzbekiston iqlimi</h4>
+        </div>
+        <div class="journey__card__content">
+          <span><i class="ri-bookmark-3-line"></i></span>
+          <h4 data-translate="fact_climate_title">Oʻzbekiston iqlimi</h4>
+          <p data-translate="fact_climate_descr">Oʻzbekiston iqlimi kontinental: issiq yoz, sovuq qish. Yogʻin kam, asosan bahor va qishda. Sayohat uchun eng qulay fasllar — bahor va kuz.</p>
+        </div>
+      </div>
+      <div class="journey__card">
+        <div class="journey__card__bg">
+          <span><i class="ri-landscape-fill"></i></span>
+          <h4 data-translate="fact_tashkent_title">Toshkent haqida</h4>
+        </div>
+        <div class="journey__card__content">
+          <span><i class="ri-landscape-fill"></i></span>
+          <h4 data-translate="fact_tashkent_title">Toshkent haqida</h4>
+          <p data-translate="fact_tashkent_descr">Toshkent — Oʻzbekiston poytaxti va eng yirik shahri. 2000 yillik tarixga ega, iqtisodiy va madaniy markaz. Bu yerda 3 millionga yaqin aholi yashaydi.</p>
+        </div>
+      </div>
+      <div class="journey__card">
+        <div class="journey__card__bg">
+          <span><i class="ri-map-2-line"></i></span>
+          <h4 data-translate="fact_tashkentdistricts_title">Toshkent shahri tumanlari</h4>
+        </div>
+        <div class="journey__card__content">
+          <span><i class="ri-map-2-line"></i></span>
+          <h4 data-translate="fact_tashkentdistricts_title">Toshkent shahri tumanlari</h4>
+          <p data-translate="fact_tashkentdistricts_descr">Toshkent shahri 11 ta tumanlardan iborat: Olmazor, Bektemir, Mirobod, Mirzo Ulug‘bek, Sergeli, Chilonzor, Shayxontohur, Yunusobod, Yakkasaroy, Yashnobod, Uchtepa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="section__container client__container">
-      <h2 class="section__header">Minglab sayohatchilar tomonidan sevib tanlangan</h2>
-      <p class="section__description">
-        Sayohatga oshno qalblar va unutilmas xotiralar haqidagi hikoyalarni bizning qadrli mijozlarimiz nigohi orqali kashf eting.
+  <div class="map">
+    <div id="map"></div>
+  </div>
+
+
+  <section class="section__container showcase__container" id="package">
+    <div class="showcase__image">
+      <img src="assets/tourist_girl.jpg" alt="showcase" />
+    </div>
+    <div class="showcase__content">
+      <h4 data-translate="showcase_title">O‘ZBEKISTON</h4>
+      <p data-translate="showcase_descr1">
+        O‘zbekistonning rasmiy nomi — O‘zbekiston Respublikasi. Uning poytaxti — Toshkent shahri. Mamlakatning umumiy hududi 447,4 ming kvadrat kilometrni tashkil qiladi. Davlat tuzumi huquqiy demokratik tizim asosida qurilgan.
+        2015-yilgi ma’lumotlarga ko‘ra, aholi soni 37,7 million kishini tashkil etadi. 2025-yilga kelib, mehnatga layoqatli aholining ulushi umumiy aholining 60,5 foizini tashkil etishi kutilmoqda.
+        Respublikaning davlat tili — o‘zbek tili. Davlat rahbari — Prezident Shavkat Miromonovich Mirziyoyev. Pul birligi — O‘zbekiston so‘mi.
+        O‘zbekiston GMT +5 vaqt zonasida joylashgan. Mamlakatning xalqaro telefon kodi +998, internetdagi yuqori darajadagi domeni esa “.uz” hisoblanadi. Elektr tarmog‘ining kuchlanishi 220 volt, chastotasi esa 50 Gts. O‘zbekistonda avtomobillar harakati o‘ng tomonlama hisoblanadi.
       </p>
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="client__card">
-              <div class="client__content">
-                <div class="client__rating">
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                </div>
-                <p>
-                  Skywings has completely transformed my travel experience. From
-                  finding hidden gems in bustling cities to discovering serene
-                  retreats off the beaten path, every detail was thoughtfully
-                  arranged. I can't recommend Skywings enough for anyone looking
-                  to elevate their travel experience!
-                </p>
-              </div>
-              <div class="client__details">
-                <img src="assets/client-1.jpg" alt="client" />
-                <div>
-                  <h4>Abdurahmon Vahobboyev</h4>
-                  <h5>Sayohat blogeri</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="client__card">
-              <div class="client__content">
-                <div class="client__rating">
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                </div>
-                <p>
-                  My recent adventure with Skywings was nothing short of
-                  spectacular. The personalized itineraries and recommendations
-                  they provided led me to extraordinary locations that I would
-                  never have found on my own. I'm already planning my next
-                  adventure with them!
-                </p>
-              </div>
-              <div class="client__details">
-                <img src="assets/client-2.jpg" alt="client" />
-                <div>
-                  <h4>Muhammadiyor Shokirov</h4>
-                  <h5>Sarguzasht ishqibozi</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="client__card">
-              <div class="client__content">
-                <div class="client__rating">
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                </div>
-                <p>
-                  Skywings offered a transformative experience for my research
-                  into historical landmarks. The unique aerial perspectives and
-                  provided a new level of appreciation and insight into the
-                  sites I studied. I highly recommend their services to fellow
-                  historians and cultural enthusiasts.
-                </p>
-              </div>
-              <div class="client__details">
-                <img src="assets/client-3.jpg" alt="client" />
-                <div>
-                  <h4>Doniyor Sohibov</h4>
-                  <h5>Sportchi</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="client__card">
-              <div class="client__content">
-                <div class="client__rating">
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                  <span><i class="ri-star-fill"></i></span>
-                </div>
-                <p>
-                  Finding a balance between work and travel can be challenging,
-                  but Skywings made it effortless. Their efficient planning and
-                  excellent recommendations helped me maximize my downtime and
-                  enjoy every moment of my trip. I look forward to working with
-                  them again on future travels.
-                </p>
-              </div>
-              <div class="client__details">
-                <img src="assets/client-4.jpg" alt="client" />
-                <div>
-                  <h4>Ruslan Aleksandrov</h4>
-                  <h5>Biznes rahbari</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <p data-translate="showcase_descr2">
+        O‘zbekistonda boshqa turkiy tillarda so‘zlashuvchi xalqlar vakillari ham yashaydi. Ular qatoriga qozoqlar, qirg‘izlar, turkmanlar, uyg‘urlar va tatarlar kiradi. Bundan tashqari, respublikada fors tillari guruhiga mansub til — tojik tilida so‘zlashuvchi tojiklar katta jamoani tashkil etadi (taxminan 4,7%).
+        Aholining muhim qismini ruslar va rus tilida so‘zlashuvchi boshqa xalqlar tashkil qiladi. Ularning umumiy ulushi respublika aholining qariyb 16 foiziga teng. Shuningdek, O‘zbekistonda koreyslar, arablar, Markaziy Osiyo lo‘lilari, yahudiylar, nemislar va boshqa ko‘plab millat vakillari ham istiqomat qiladi.
+        Umuman olganda, O‘zbekiston aholisi soni yildan-yilga tez sur’atlarda ortib bormoqda.
+      </p>
+      <div class="showcase__btn">
+        <button class="btn" data-translate="showcase_btn">
+          Hoziroq band qiling!
+          <span><i class="ri-arrow-right-line"></i></span>
+        </button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer id="contact">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="footer__logo">
-            <a href="#" class="logo">Global Sayohat</a>
-            
+  <section class="section__container client__container">
+    <h2 class="section__header" data-translate="client_header">Minglab sayohatchilar tomonidan sevib tanlangan</h2>
+    <p class="section__description" data-translate="client_descr">
+      Sayohatga oshno qalblar va unutilmas xotiralar haqidagi hikoyalarni bizning qadrli mijozlarimiz nigohi orqali kashf eting.
+    </p>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="client__card">
+            <div class="client__content">
+              <div class="client__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <p data-translate="client1_text">
+                Skywings has completely transformed my travel experience. From
+                finding hidden gems in bustling cities to discovering serene
+                retreats off the beaten path, every detail was thoughtfully
+                arranged. I can't recommend Skywings enough for anyone looking
+                to elevate their travel experience!
+              </p>
+            </div>
+            <div class="client__details">
+              <img src="assets/client-1.jpg" alt="client" />
+              <div>
+                <h4 data-translate="client1_name">Abdurahmon Vahobboyev</h4>
+                <h5 data-translate="client1_title">Sayohat blogeri</h5>
+              </div>
+            </div>
           </div>
-          <p>
-            O‘zbekistonni osongina va zavq bilan kashf eting — bizning keng qamrovli sayohat platformamiz orqali. Sayohatingiz aynan shu yerda boshlanadi — bu yerda qulay rejalashtirish unutilmas taassurotlar bilan uyg‘unlashadi.
-          </p>
-          <ul class="footer__socials">
-            <li>
-              <a href="#"><i class="ri-telegram-fill"></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/bmbglobalsayohat/?hl=en"><i class="ri-instagram-line"></i></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@bmbholding"><i class="ri-youtube-line"></i></a>
-            </li>
-          </ul>
         </div>
-        <div class="footer__col">
-          <h4>Havola</h4>
-          <ul class="footer__links">
-            <li><a href="#">ASOSIY</a></li>
-            <li><a href="#">TUR PAKETLAR</a></li>
-            <li><a href="#">BIZ HAQIMIZDA</a></li>
-            <li><a href="#">MEHMONXONALAR</a></li>
-          </ul>
+        <div class="swiper-slide">
+          <div class="client__card">
+            <div class="client__content">
+              <div class="client__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <p data-translate="client2_text">
+                My recent adventure with Skywings was nothing short of
+                spectacular. The personalized itineraries and recommendations
+                they provided led me to extraordinary locations that I would
+                never have found on my own. I'm already planning my next
+                adventure with them!
+              </p>
+            </div>
+            <div class="client__details">
+              <img src="assets/client-2.jpg" alt="client" />
+              <div>
+                <h4 data-translate="client2_name">Muhammadiyor Shokirov</h4>
+                <h5 data-translate="client2_title">Sarguzasht ishqibozi</h5>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="footer__col">
-          <h4>Biz bilan bog'laning</h4>
-          <ul class="footer__links">
-            <li>
-              <a href="">
-                <span><i class="ri-phone-fill"></i></span> +998 95 381 50 05
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span><i class="ri-record-mail-line"></i></span> info@globalsayohat
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span><i class="ri-map-pin-2-fill"></i></span> Toshkent, Yakkasaroy tumani, Kichik halqa yo'li, 14-b-uy
-              </a>
-            </li>
-          </ul>
+        <div class="swiper-slide">
+          <div class="client__card">
+            <div class="client__content">
+              <div class="client__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <p data-translate="client3_text">
+                Skywings offered a transformative experience for my research
+                into historical landmarks. The unique aerial perspectives and
+                provided a new level of appreciation and insight into the
+                sites I studied. I highly recommend their services to fellow
+                historians and cultural enthusiasts.
+              </p>
+            </div>
+            <div class="client__details">
+              <img src="assets/client-3.jpg" alt="client" />
+              <div>
+                <h4 data-translate="client3_name">Doniyor Sohibov</h4>
+
+
+                <h5 data-translate="client3_title">Sportchi</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="client__card">
+            <div class="client__content">
+              <div class="client__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <p data-translate="client4_text">
+                Finding a balance between work and travel can be challenging,
+                but Skywings made it effortless. Their efficient planning and
+                excellent recommendations helped me maximize my downtime and
+                enjoy every moment of my trip. I look forward to working with
+                them again on future travels.
+              </p>
+            </div>
+            <div class="client__details">
+              <img src="assets/client-4.jpg" alt="client" />
+              <div>
+                <h4 data-translate="client4_name">Ruslan Aleksandrov</h4>
+                <h5 data-translate="client4_title">Biznes rahbari</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer__bar">
-        Mualliflik huquqi © 2025 Leno Agency. Barcha huquqlar himoyalangan.
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#" class="logo" data-translate="footer_logo">Global Sayohat</a>
+        </div>
+        <p data-translate="footer_descr">
+          O‘zbekistonni osongina va zavq bilan kashf eting — bizning keng qamrovli sayohat platformamiz orqali. Sayohatingiz aynan shu yerda boshlanadi — bu yerda qulay rejalashtirish unutilmas taassurotlar bilan uyg‘unlashadi.
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-telegram-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/bmbglobalsayohat/?hl=en"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@bmbholding"><i class="ri-youtube-line"></i></a>
+          </li>
+        </ul>
       </div>
-    </footer>
+      <div class="footer__col">
+        <h4 data-translate="footer_havola">Havola</h4>
+        <ul class="footer__links">
+          <li><a href="#" data-translate="footer_asosiy">ASOSIY</a></li>
+          <li><a href="#" data-translate="footer_tour">TUR PAKETLAR</a></li>
+          <li><a href="#" data-translate="footer_about">BIZ HAQIMIZDA</a></li>
+          <li><a href="#" data-translate="footer_hotel">MEHMONXONALAR</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-translate="footer_contact">Biz bilan bog'laning</h4>
+        <ul class="footer__links">
+          <li>
+            <a href="">
+              <span><i class="ri-phone-fill"></i></span>
+              <span data-translate="footer_phone">+998 95 381 50 05</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-record-mail-line"></i></span>
+              <span data-translate="footer_email">info@globalsayohat</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              <span data-translate="footer_address">Toshkent, Yakkasaroy tumani, Kichik halqa yo'li, 14-b-uy</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar" data-translate="footer_copyright">
+      Mualliflik huquqi © 2025 Leno Agency. Barcha huquqlar himoyalangan.
+    </div>
+  </footer>
+<!-- ...scripts... -->
+
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
