@@ -16,8 +16,8 @@ navLinks.addEventListener("click", (e) => {
 
 const scrollRevealOption = {
   origin: "bottom",
-  distance: "50px",
-  duration: 1000,
+  distance: "0px",
+  // duration: 1000,
 };
 
 ScrollReveal().reveal(".header__image img", {
@@ -37,10 +37,10 @@ ScrollReveal().reveal(".header__btns", {
   delay: 1500,
 });
 
-ScrollReveal().reveal(".destination__card", {
-  ...scrollRevealOption,
-  interval: 500,
-});
+// ScrollReveal().reveal(".destination__card", {
+//   ...scrollRevealOption,
+//   interval: 0,
+// });
 
 ScrollReveal().reveal(".showcase__image img", {
   ...scrollRevealOption,
@@ -65,8 +65,8 @@ ScrollReveal().reveal(".banner__card", {
 });
 
 ScrollReveal().reveal(".discover__card", {
-  // ...scrollRevealOption,
-  interval: 500,
+  ...scrollRevealOption,
+  interval: 100,
 });
 
 const swiper = new Swiper(".swiper", {
