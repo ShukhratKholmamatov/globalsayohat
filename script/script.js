@@ -75,28 +75,69 @@ const swiper = new Swiper(".swiper", {
   loop: true,
 });
 
-const filterButtons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.destination__card');
+  const cityButtons = document.querySelectorAll('.filter-btn'); // same as before
+const starButtons = document.querySelectorAll('.star-btn'); // new
+const cards = document.querySelectorAll('.destination__card');
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const selectedCity = button.getAttribute('data-city');
+let selectedCity = 'all';
+let selectedStars = 'all';
 
-      // Remove 'active' class from all and add to current
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
+  // filterButtons.forEach(button => {
+  //   button.addEventListener('click', () => {
+  //     const selectedCity = button.getAttribute('data-city');
 
-      // Show/Hide cards based on filter
-      cards.forEach(card => {
-        const cardCity = card.getAttribute('data-city');
-        if (selectedCity === 'all' || cardCity === selectedCity) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
+  //     // Remove 'active' class from all and add to current
+  //     filterButtons.forEach(btn => btn.classList.remove('active'));
+  //     button.classList.add('active');
+
+  //     // Show/Hide cards based on filter
+  //     cards.forEach(card => {
+  //       const cardCity = card.getAttribute('data-city');
+  //       if (selectedCity === 'all' || cardCity === selectedCity) {
+  //         card.style.display = 'block';
+  //       } else {
+  //         card.style.display = 'none';
+  //       }
+  //     });
+  //   });
+  // });
+
+  // City filter (your code extended)
+cityButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    selectedCity = button.getAttribute('data-city');
+
+    cityButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    applyFilters();
   });
+});
+
+// Star filter (new)
+starButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    selectedStars = button.getAttribute('data-stars');
+
+    starButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    applyFilters();
+  });
+});
+
+// Apply both filters
+function applyFilters() {
+  cards.forEach(card => {
+    const cardCity = card.getAttribute('data-city');
+    const cardStars = card.getAttribute('data-stars');
+
+    const matchCity = (selectedCity === 'all' || cardCity === selectedCity);
+    const matchStars = (selectedStars === 'all' || cardStars === selectedStars);
+
+    card.style.display = (matchCity && matchStars) ? 'block' : 'none';
+  });
+}
 
 
   (function () {
@@ -260,4 +301,18 @@ const translations = {
       });
     })();
 
-    
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 3000); // Change every 5 seconds
