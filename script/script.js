@@ -201,7 +201,15 @@ const translations = {
     footer_phone: "+998 95 381 50 05",
     footer_email: "info@globalsayohat",
     footer_address: "Toshkent, Yakkasaroy tumani, Kichik halqa yo'li, 14-b-uy",
-    footer_copyright: "Mualliflik huquqi © 2025 Leno Agency. Barcha huquqlar himoyalangan."
+    footer_copyright: "Mualliflik huquqi © 2025 Leno Agency. Barcha huquqlar himoyalangan.",
+    five_day_trip: "Toshkent-Samarqand-Buxoro-Xiva",
+    six_day_trip: "Toshkent-Samarqand-Buxoro",
+    eight_day_trip: "Toshkent-Samarqand-Buxoro",
+    five_text: "5 kunduz 4 kecha",
+    six_text: "6 kunduz 5 kecha",
+    seven_text: "8 kunduz 7 kecha",
+    m_manzil: "Mashhur Manzillar",
+    mazil_desc: "O‘zbekiston atrofidagi eng go'zal va qadimiy manzillarni kashf eting"
   },
   ru: {
     main_nav: "ГЛАВНАЯ",
@@ -262,7 +270,15 @@ const translations = {
     footer_phone: "+998 95 381 50 05",
     footer_email: "info@globalsayohat",
     footer_address: "Ташкент, Яккасарайский район, Кичик кольцевая дорога, дом 14-Б",
-    footer_copyright: "Авторские права © 2025 Leno Agency. Все права защищены."
+    footer_copyright: "Авторские права © 2025 Leno Agency. Все права защищены.",
+    five_day_trip: "Ташкент – Самарканд – Бухара – Хива",
+    six_day_trip: "Ташкент – Самарканд – Бухара",
+    eight_day_trip: "Ташкент – Самарканд – Бухара",
+    five_text: "5 дней 4 ночи",
+    six_text: "6 дней 5 ночей",
+    eight_text: "8 дней 7 ночей",
+    m_manzil: "Знаменитые места",
+    manzil_desc: "Откройте для себя самые красивые и древние места Узбекистана"
   }
 };
 
