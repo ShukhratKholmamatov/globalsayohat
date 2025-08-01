@@ -26,17 +26,22 @@
         </div>
       </div>
       <ul class="nav__links" id="nav-links">
-        <li><a href="index.html">ASOSIY</a></li>
-        <li><a href="about.html">BIZ HAQIMIZDA</a></li>
-        <li><a href="tour.html">TUR PAKETLAR</a></li>
-        <li><a href="hotel.html">MEHMONXONALAR</a></li>
-        <li><a href="contact.html">BOG'LANISH</a></li>
-        <li><a href="contact.html">Sayohatni bron qilish</a></li>
+        <li><a data-translate="main_nav" href="index.html">ASOSIY</a></li>
+        <li><a data-translate="about_nav" href="about.html">BIZ HAQIMIZDA</a></li>
+        <li><a data-translate="tour_nav" href="tour.html">TUR PAKETLAR</a></li>
+        <li><a data-translate="hotel_nav" href="hotel.html">MEHMONXONALAR</a></li>
+        <li><a data-translate="contact_nav" href="contact.html">BOG'LANISH</a></li>
+        <li><a data-translate="book_nav" href="contact.html">Sayohatni bron qilish</a></li>
       </ul>
       <div class="nav__btns">
-        <button class="btn">BRON QILISH</button>
+        <button class="btn" data-translate="bron">BRON QILISH</button>
       </div>
     </nav>
+
+    <div id="langSwitcher">
+      <button onclick="setLang('uz')">🇺🇿</button>
+      <button onclick="setLang('ru')">🇷🇺</button>
+    </div>
 
 
     <section id="about_us"
@@ -94,62 +99,64 @@
     </section>
     <!-- for body -->
 
-    <footer id="contact">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="footer__logo">
-            <a href="#" class="logo">Global Sayohat</a>
-            
-          </div>
-          <p>
-            O‘zbekistonni osongina va zavq bilan kashf eting — bizning keng qamrovli sayohat platformamiz orqali. Sayohatingiz aynan shu yerda boshlanadi — bu yerda qulay rejalashtirish unutilmas taassurotlar bilan uyg‘unlashadi.
-          </p>
-          <ul class="footer__socials">
-            <li>
-              <a href=""><i class="ri-telegram-fill"></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/bmbglobalsayohat/?hl=en"><i class="ri-instagram-line"></i></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@bmbholding"><i class="ri-youtube-line"></i></a>
-            </li>
-          </ul>
+      <footer id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#" class="logo" data-translate="footer_logo">Global Sayohat</a>
         </div>
-        <div class="footer__col">
-          <h4>Havola</h4>
-          <ul class="footer__links">
-            <li><a href="#">ASOSIY</a></li>
-            <li><a href="#">TUR PAKETLAR</a></li>
-            <li><a href="#">BIZ HAQIMIZDA</a></li>
-            <li><a href="#">MEHMONXONALAR</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Biz bilan bog'laning</h4>
-          <ul class="footer__links">
-            <li>
-              <a href="">
-                <span><i class="ri-phone-fill"></i></span> +998 95 381 50 05
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span><i class="ri-record-mail-line"></i></span> info@globalsayohat
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span><i class="ri-map-pin-2-fill"></i></span> Toshkent, Yakkasaroy tumani, Kichik halqa yo'li, 14-b-uy
-              </a>
-            </li>
-          </ul>
-        </div>
+        <p data-translate="footer_descr">
+          O‘zbekistonni osongina va zavq bilan kashf eting — bizning keng qamrovli sayohat platformamiz orqali. Sayohatingiz aynan shu yerda boshlanadi — bu yerda qulay rejalashtirish unutilmas taassurotlar bilan uyg‘unlashadi.
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-telegram-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/bmbglobalsayohat/?hl=en"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@bmbholding"><i class="ri-youtube-line"></i></a>
+          </li>
+        </ul>
       </div>
-      <div class="footer__bar">
-        Mualliflik huquqi © 2025 Leno Agency. Barcha huquqlar himoyalangan.
+      <div class="footer__col">
+        <h4 data-translate="footer_havola">Havola</h4>
+        <ul class="footer__links">
+          <li><a href="#" data-translate="footer_asosiy">ASOSIY</a></li>
+          <li><a href="#" data-translate="footer_tour">TUR PAKETLAR</a></li>
+          <li><a href="#" data-translate="footer_about">BIZ HAQIMIZDA</a></li>
+          <li><a href="#" data-translate="footer_hotel">MEHMONXONALAR</a></li>
+        </ul>
       </div>
-    </footer>
+      <div class="footer__col">
+        <h4 data-translate="footer_contact">Biz bilan bog'laning</h4>
+        <ul class="footer__links">
+          <li>
+            <a href="">
+              <span><i class="ri-phone-fill"></i></span>
+              <span data-translate="footer_phone">+998 95 381 50 05</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-record-mail-line"></i></span>
+              <span data-translate="footer_email">info@globalsayohat</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              <span data-translate="footer_address">Toshkent, Yakkasaroy tumani, Kichik halqa yo'li, 14-b-uy</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar" data-translate="footer_copyright">
+      Mualliflik huquqi © 2025 Leno Agency. Barcha huquqlar himoyalangan.
+    </div>
+  </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
