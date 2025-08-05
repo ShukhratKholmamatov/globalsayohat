@@ -1036,3 +1036,30 @@ footer {
     gap: 2rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .filter-btn,
+  .star-btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-buttons {
+    gap: 6px;
+    padding: 4px 8px;
+  }
+  .filter-btn,
+  .star-btn {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ACCESSIBILITY */
+.filter-btn:focus-visible,
+.star-btn:focus-visible {
+  outline: 2px solid rgba(0,123,255,0.6);
+  outline-offset: 2px;
+}

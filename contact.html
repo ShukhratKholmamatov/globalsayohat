@@ -34,7 +34,7 @@
         <li><a data-translate="book_nav" href="contact.html">Sayohatni bron qilish</a></li>
       </ul>
       <div class="nav__btns">
-        <button class="btn" data-translate="bron">BRON QILISH</button>
+        <!-- <button class="btn" data-translate="bron">BRON QILISH</button> -->
       </div>
     </nav>
 
@@ -47,14 +47,14 @@
     <div class="st_contact">
 
       <div class="container">
-      <h2>Biz Bilan Bog'laning!</h2>
+      <h2 data-translate="h2_connect">Biz Bilan Bog'laning!</h2>
       <form id="contactForm">
-        <input type="text" id="name" placeholder="Ism & Familiya" required />
-        <input type="text" id="contact" placeholder="Telefon raqam / Email" required />
-        <textarea id="message" rows="5" placeholder="Xabaringiz..." required></textarea>
-        <button type="submit">Yuborish</button>
-        <div class="success" id="successMsg" style="display: none;">Message sent!</div>
-        <div class="error" id="errorMsg" style="display: none;">Error sending message.</div>
+        <input type="text" id="name" placeholder="FIO" required />
+        <input type="text" id="contact" placeholder="Telefon / E-mail" required />
+        <textarea id="message" rows="5" placeholder="..." required></textarea>
+        <button type="submit" data-translate="btn_send">Yuborish</button>
+        <div class="success" id="successMsg" style="display: none;" data-translate="div_xabar">Message sent!</div>
+        <div class="error" id="errorMsg" style="display: none;" data-translate="div_error">Error sending message.</div>
       </form>
     </div>
 
