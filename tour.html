@@ -41,6 +41,7 @@
     <div id="langSwitcher">
       <button onclick="setLang('uz')">🇺🇿</button>
       <button onclick="setLang('ru')">🇷🇺</button>
+      <button onclick="setLang('en')">🇺🇸</button>
     </div>
 
     <section class="section__container destination__container" id="about">
@@ -49,8 +50,15 @@
         O‘zbekiston atrofidagi eng go'zal va qadimiy manzillarni kashf eting
       </p>
 
+      <div class="hotelFilter_tabs">
+        <div class="hotelFilter_tab" data-translate="eko" data-type="eko">Eko turizm</div>
+        <div class="hotelFilter_tab" data-translate="umra" data-type="umra">Umra safarlari</div>
+        <div class="hotelFilter_tab" data-translate="viloyatlar" data-type="vol">Viloyatlararo</div>
+        <div class="hotelFilter_tab" data-translate="xalqaro" data-type="int">Xalqaro</div>
+      </div>
+
       <div class="destination__grid">
-        <div class="destination__card">
+        <div class="hotelFilter_card" data-type="eko">
           <img src="assets/Oq_masjid.png" alt="destination" />
           <div class="destination__card__details">
             <div>
@@ -63,7 +71,7 @@
             </div>
           </div>
         </div>
-        <div class="destination__card">
+        <div class="hotelFilter_card" data-type="umra">
           <img src="assets/tuya.png" alt="destination" />
           <div class="destination__card__details">
             <div>
@@ -76,7 +84,21 @@
             </div>
           </div>
         </div>
-        <div class="destination__card">
+        <div class="hotelFilter_card" data-type="eko">
+          <img src="assets/eski_gumbaz.png" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4 data-translate="eight_day_trip">Toshkent-Samarqand-Buxoro</h4>
+              <p data-translate="eight_text">8 kunduz 7 kecha</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+
+        <div class="hotelFilter_card" data-type="eko">
           <img src="assets/eski_gumbaz.png" alt="destination" />
           <div class="destination__card__details">
             <div>

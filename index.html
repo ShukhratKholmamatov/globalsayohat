@@ -45,6 +45,7 @@
   <div id="langSwitcher">
     <button onclick="setLang('uz')">🇺🇿</button>
     <button onclick="setLang('ru')">🇷🇺</button>
+    <button onclick="setLang('en')">🇺🇸</button>
   </div>
 
   <header id="home">
@@ -53,7 +54,7 @@
         <p data-translate="index1">SAYOHATINGIZNI yangi bosqichga olib chiqing</p>
         <h1 data-translate="index2">O‘zbekiston sehrini his eting!</h1>
         <div class="header__btns">
-          <button class="btn" data-translate="index3">Hozir band qilish</button>
+          <a style="text-decoration: none; background: none;" href="contact.html"><button class="btn" data-translate="index3">Hozir band qilish</button></a>
           <a href="https://youtu.be/mk68RcnQVq4?si=wPyiStwlqlGKgNWK">
             <span><i class="ri-play-circle-fill"></i></span>
           </a>
@@ -65,11 +66,73 @@
     </div>
   </header>
   
+  <div class="tour-container" id="tourContainer">
+    <!-- Cards -->
+    <div class="tour-card" onclick="showDetails(this)" data-title="Tarixiy va Madaniy turizm" data-desc="O‘zbekiston – buyuk sivilizatsiyalar markazi, boy tarixiy merosga ega yurtdir.
+Samarqand, Buxoro va Xiva kabi shaharlar dunyo tamaddunining durdonalaridan hisoblanadi.
+Bu yo‘nalish bo‘yicha sayohatlar qadimiy obidalar, madaniyat va urf-odatlar bilan tanishtiradi.
+Har bir qadamingiz sizni ming yillik tarix bilan yuzlashtiradi." data-img="assets/madaniy_tur.jpg">
+      <img class="tour-image" src="assets/madaniy_tur.jpg" alt="Mountain Tour">
+      <div class="tour-title" data-translate="tarvamad">Tarixiy va madaniy turizm</div>
+    </div>
 
+    <div class="tour-card" onclick="showDetails(this)" data-title="Ziyorat Turizmi" data-desc="O‘zbekiston islom olamining muqaddas maskanlaridan biridir.
+Imom Buxoriy, Imom Termiziy, Bahouddin Naqshband kabi zotlar qadamjolari ziyorat etiladi.
+Ziyorat turizmi ruhiy poklanish, ma’naviy tajriba va qadriyatlar bilan boyitadi.
+Bu yo‘nalish musulmon sayyohlar uchun alohida ahamiyat kasb etadi." data-img="assets/ziyorat.jpg">
+      <img class="tour-image" src="assets/ziyorat.jpg" alt="Beach Tour">
+      <div class="tour-title" data-translate="ziyorat">Ziyorat Turizmi</div>
+    </div>
+
+    <div class="tour-card" onclick="showDetails(this)" data-title="Eko Turizmi" data-desc="O‘zbekiston tabiati – cho‘llar, tog‘lar, ko‘llar va milliy bog‘lar bilan boy.
+Eko turizm tabiat qo‘ynida hordiq chiqarish va ekologik ongni shakllantirish imkonini beradi.
+Sayyohlar tog‘larda yurish, qushlarni kuzatish va mahalliy hayot tarzini o‘rganishadi.
+Bu sog‘lom va barqaror dam olishni istovchilar uchun ideal tanlovdir.
+
+" data-img="assets/eko_tur.jpg">
+      <img class="tour-image" src="assets/eko_tur.jpg" alt="Desert Tour">
+      <div class="tour-title" data-translate="eko_tur">Eko Turizmi</div>
+    </div>
+
+    <div class="tour-card" onclick="showDetails(this)" data-title="Tibbiyot Turizmi" data-desc="O‘zbekiston tibbiyot sohasida tez rivojlanayotgan, raqobatbardosh xizmatlarni taklif etuvchi mamlakatdir.
+Stomatologiya, oftalmologiya, kardiologiya va boshqa sohalarda yuqori malakali xizmatlar mavjud.
+Tibbiyot turizmi sifatli davolanish va yengil narxlar uyg‘unligidir.
+Bemorlar davolanish bilan birga mamlakat bilan ham tanishish imkoniyatiga ega bo‘ladilar.
+
+" data-img="assets/tibbiy_tur.png">
+      <img class="tour-image" src="assets/tibbiy_tur.png" alt="Forest Tour">
+      <div class="tour-title" data-translate="tibbiyot_tur">Tibbiyot Turizmi</div>
+    </div>
+
+    <div class="tour-card" onclick="showDetails(this)" data-title="Ichki Turizm" data-desc="O‘zbekiston fuqarolari uchun o‘z yurtini kashf etish imkoniyatlari kengaymoqda.
+Mahalliy sayyohlar uchun maxsus yo‘nalishlar, ekskursiyalar va tur paketlar taklif qilinmoqda.
+Ichki turizm oilaviy dam olish, tarixiy joylarga tashrif va tabiat qo‘ynida sayr qilishni o‘z ichiga oladi.
+Bu nafaqat dam olish, balki vatan bilan faxrlanish hissini ham mustahkamlaydi." data-img="assets/ichki turizm.jpg">
+      <img class="tour-image" src="assets/ichki turizm.jpg" alt="City Tour">
+      <div class="tour-title" data-translate="ichki_tur">Ichki Turizm</div>
+    </div>
+
+    <div class="tour-card" onclick="showDetails(this)" data-title="Viza Yordami" data-desc="Biz xorijlik sayyohlar uchun viza olish jarayonida to‘liq ko‘maklashamiz.
+Rasmiy taklifnoma, hujjatlarni tayyorlash va maslahat xizmatlari ko‘rsatiladi.
+Vizovaya podderjka – sizning O‘zbekistonga safaringizdagi birinchi va eng muhim qadamingiz.
+Ishonchli va tezkor xizmatlarimiz bilan har bir mijozimizni mamnun etamiz." data-img="assets/visa_pass.png">
+      <img class="tour-image" src="assets/visa_pass.png" alt="Island Tour">
+      <div class="tour-title" data-translate="viza_yor">Viza Yordami</div>
+    </div>
+  </div>
+
+  <!-- Shared Tour Details Element -->
+  <div class="tour-details" id="tourDetails">
+    <img id="detailsImg" src="" alt="">
+    <div class="details-text">
+      <div class="details-title" id="detailsTitle"></div>
+      <div class="details-description" id="detailsDesc"></div>
+    </div>
+  </div>
   
 
   <section class="section__container journey__container" id="tour">
-    <h2 class="section__header" data-translate="facts_title">O‘zbekiston Haqida Qiziqarli Faktlar</h2>
+    <!-- <h2 class="section__header" data-translate="facts_title">O‘zbekiston Haqida Qiziqarli Faktlar</h2>
     <div class="journey__grid">
       <div class="journey__card">
         <div class="journey__card__bg">
@@ -104,7 +167,7 @@
           <p data-translate="fact_oldcity_descr">O‘zbekistonning eng qadimiy shahri Samarqand — Rim shahri bilan tengdosh hisoblanadi.</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
 <!--     
 
@@ -181,7 +244,7 @@
     </div> -->
   </section>
 
-  <div class="slider">
+  <!-- <div class="slider">
     <div class="slide active" style="background-image: url('/assets/gold_mimng.jpg')">
       <div class="info">
         <h1 data-translate="h1_gold">Oltin</h1>
@@ -215,7 +278,7 @@
         <p data-translate="p_muymuborak"></p>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <section class="section__container showcase__container" id="package">
     <div class="showcase__image">
@@ -406,7 +469,7 @@
           <li>
             <a href="">
               <span><i class="ri-phone-fill"></i></span>
-              <span data-translate="footer_phone">+998 95 381 50 05</span>
+              <span data-translate="footer_phone">+998 95 873 00 07</span>
             </a>
           </li>
           <li>
@@ -434,5 +497,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/functions.js"></script>
   </body>
 </html>

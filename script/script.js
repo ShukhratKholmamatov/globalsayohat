@@ -242,7 +242,17 @@ const translations = {
     h2_connect: "Biz Bilan Bog'laning!",
     btn_send: "Yuborish",
     div_xabar: "Xabar yuborildi!",
-    div_error: "Xatolik yuz berdi."
+    div_error: "Xatolik yuz berdi.",
+    eko: "Eko turizm",
+    umra: "Umra safarlari",
+    viloyatlar: "Viloyatlararo",
+    xalqaro: "Xalqaro",
+    tarvamad: "Tarixiy va madaniy turizm",
+    ziyorat: "Ziyorat turizmi",
+    eko_tur: "Eko Turizmi",
+    tibbiyot_tur: "Tibbiyot Turizmi",
+    ichki_tur: "Ichki Turizm",
+    viza_yor: "Viza Yordami"
   },
   ru: {
     main_nav: "ГЛАВНАЯ",
@@ -280,16 +290,16 @@ const translations = {
     showcase_btn: "Забронируйте сейчас!",
     client_header: "Выбор тысяч путешественников",
     client_descr: "Откройте для себя истории о путешествиях и незабываемых впечатлениях глазами наших клиентов.",
-    client1_text: "Skywings полностью изменил мои впечатления от путешествий. Я нашёл скрытые жемчужины в шумных городах и открыл уединённые места вдали от туристических маршрутов. Всё было организовано идеально. Рекомендую Skywings всем, кто хочет сделать своё путешествие особенным!",
+    client1_text: "Global Sayohat нам очень помог, когда мы приехали в Узбекистан. Благодаря ним мы увидели самые красивые места и отлично провели время без потери времени. Спасибо!",
     client1_name: "Абдурахмон Вахоббоев",
     client1_title: "Тревел-блогер",
-    client2_text: "Моё недавнее путешествие с Skywings было просто великолепным. Индивидуальный маршрут и рекомендации помогли мне побывать там, куда сам бы не попал. Уже планирую следующую поездку с ними!",
+    client2_text: "Global Sayohat очень помог нам во время приезда в Узбекистан. Благодаря им мы увидели самые красивые места и провели время с пользой. Спасибо!",
     client2_name: "Мухаммадийор Шокиров",
     client2_title: "Любитель приключений",
-    client3_text: "Skywings предложил уникальный опыт для моего исследования исторических памятников. Необычные ракурсы позволили глубже понять и оценить места, которые я изучал. Рекомендую их всем историкам и ценителям культуры.",
+    client3_text: "С помощью Global Sayohat мы увидели самые красивые уголки Узбекистана. Компания связала нас с нужными людьми и местами, что позволило нам провести время максимально полезно.",
     client3_name: "Дониёр Сохибов",
     client3_title: "Спортсмен",
-    client4_text: "Найти баланс между работой и путешествиями бывает сложно, но с Skywings всё стало проще. Грамотное планирование и отличные советы помогли мне использовать свободное время на максимум и получить удовольствие от каждой минуты поездки. Буду обращаться ещё!",
+    client4_text: "Благодаря туристической компании Global Sayohat наше путешествие в Узбекистан прошло удобно и увлекательно. Они взяли на себя всю организацию, а нам осталось только наслаждаться поездкой.",
     client4_name: "Руслан Александров",
     client4_title: "Руководитель бизнеса",
     footer_logo: "Global Sayohat",
@@ -345,8 +355,118 @@ const translations = {
     h2_connect: "Свяжитесь с нами!",
     btn_send: "Отправить",
     div_xabar: "Сообщение отправлено!",
-    div_error: "Произошла ошибка."
-
+    div_error: "Произошла ошибка.",
+    eko: "Эко-туризм",
+    umra: "Паломничество Умра",
+    viloyatlar: "Межобластные туры",
+    xalqaro: "Международные туры"
+  },
+  en: {
+    main_nav: "HOME",
+    about_nav: "ABOUT US",
+    tour_nav: "TOUR PACKAGES",
+    hotel_nav: "HOTELS",
+    contact_nav: "CONTACT",
+    book_nav: "Book a Tour",
+    bron: "BOOK NOW",
+    index1: "Take your journey to the next level",
+    index2: "Feel the magic of Uzbekistan!",
+    index3: "Book now",
+    facts_title: "Interesting facts about Uzbekistan",
+    fact_metro_title: "Tashkent Metro",
+    fact_metro_descr: "Tashkent Metro is the first in Central Asia.",
+    fact_army_title: "Armed Forces of Uzbekistan",
+    fact_army_descr: "Uzbekistan ranks first in military strength in Central Asia, surpassing Kazakhstan, Kyrgyzstan, Tajikistan, and Turkmenistan.",
+    fact_oldcity_title: "Ancient city of Uzbekistan",
+    fact_oldcity_descr: "The oldest city of Uzbekistan is Samarkand, a contemporary of Rome.",
+    fact_people_title: "Brief about the people of Uzbekistan",
+    fact_people_descr: "Uzbekistan is a multinational country. The majority of the population (over 71%) are Uzbeks. They belong to the Southern European race, with some Mongoloid elements.",
+    fact_langs_title: "Languages of Uzbekistan",
+    fact_langs_descr: "The state language of Uzbekistan is Uzbek. Russian is widely spoken, and Tajik is spoken in some regions.",
+    fact_population_title: "Population composition of Uzbekistan",
+    fact_population_descr: "Kazakh, Kyrgyz, Turkmen, Uighur, Tatar, Tajik (4.7%), Russian and other ethnic groups (16%) live in Uzbekistan. There are also Koreans, Arabs, Gypsies, Jews, and others. The population is growing rapidly.",
+    fact_climate_title: "Climate of Uzbekistan",
+    fact_climate_descr: "Uzbekistan has a continental climate: hot summers, cold winters. Precipitation is low, mainly in spring and winter. The best time to travel is spring and autumn.",
+    fact_tashkent_title: "About Tashkent",
+    fact_tashkent_descr: "Tashkent is the capital and largest city of Uzbekistan. It has a history of more than 2000 years, is an economic and cultural center, and has a population of about 3 million people.",
+    fact_tashkentdistricts_title: "Districts of Tashkent city",
+    fact_tashkentdistricts_descr: "Tashkent has 11 districts: Olmazor, Bektemir, Mirabad, Mirzo Ulugbek, Sergeli, Chilanzar, Shaykhontokhur, Yunusabad, Yakkasaray, Yashnobod, Uchtepa.",
+    showcase_title: "UZBEKISTAN",
+    showcase_descr1: "The official name is the Republic of Uzbekistan. The capital is Tashkent city. Total area is 447.4 thousand sq. km. The government system is a democratic legal system. As of 2015, the population was 37.7 million. By 2025, the working-age population is expected to be 60.5% of the total. The state language is Uzbek. The head of state is President Shavkat Miromonovich Mirziyoyev. The currency is the Uzbek sum. Uzbekistan is in the GMT+5 time zone. The international phone code is +998, the national internet domain is .uz. Electrical network: 220V, 50Hz. Right-hand traffic.",
+    showcase_descr2: "Uzbekistan is also home to other Turkic peoples: Kazakhs, Kyrgyz, Turkmens, Uighurs, Tatars. In addition, there is a large Tajik-speaking community (about 4.7%). Russians and Russian speakers make up about 16% of the population. Koreans, Arabs, Gypsies, Jews, Germans, and others also live here. The country’s population is rapidly increasing each year.",
+    showcase_btn: "Book Now!",
+    client_header: "The Choice of Thousands of Travelers",
+    client_descr: "Discover travel stories and unforgettable experiences through the eyes of our clients.",
+    client1_text: "Global Sayohat was a great help when we arrived in Uzbekistan. Through them, we visited the most beautiful places and had a great time without wasting any of it. Thank you!",
+    client1_name: "Abdurakhmon Vakhobboev",
+    client1_title: "Travel Blogger",
+    client2_text: "Global Sayohat was a great help when we arrived in Uzbekistan. Through them, we saw the most beautiful places and spent our time efficiently. Thank you!",
+    client2_name: "Muhammadiyor Shokirov",
+    client2_title: "Adventure Enthusiast",
+    client3_text: "Thanks to Global Sayohat, we explored the most beautiful spots in Uzbekistan. The company connected us with the right people and places, helping us make the most of our time.",
+    client3_name: "Doniyor Sokhibov",
+    client3_title: "Athlete",
+    client4_text: "Thanks to the Global Sayohat travel company, our trip to Uzbekistan was smooth and enjoyable. They handled all the arrangements, leaving us to simply enjoy the journey.",
+    client4_name: "Ruslan Aleksandrov",
+    client4_title: "Business Leader",
+    footer_logo: "Global Sayohat",
+    footer_descr: "Discover Uzbekistan easily and joyfully — with our modern travel platform. Your journey begins here — where simple planning meets unforgettable experiences.",
+    footer_havola: "Links",
+    footer_asosiy: "HOME",
+    footer_tour: "TOUR PACKAGES",
+    footer_about: "ABOUT US",
+    footer_hotel: "HOTELS",
+    footer_contact: "Contact Us",
+    footer_phone: "+998 95 381 50 05",
+    footer_email: "info@globalsayohat",
+    footer_address: "Tashkent, Yakkasaray District, Kichik Koltsevaya Road, Building 14-B",
+    footer_copyright: "Copyright © 2025 Leno Agency. All rights reserved.",
+    five_day_trip: "Tashkent – Samarkand – Bukhara – Khiva",
+    six_day_trip: "Tashkent – Samarkand – Bukhara",
+    eight_day_trip: "Tashkent – Samarkand – Bukhara",
+    five_text: "5 days 4 nights",
+    six_text: "6 days 5 nights",
+    eight_text: "8 days 7 nights",
+    m_manzil: "Famous Places",
+    manzil_desc: "Discover the most beautiful and ancient places of Uzbekistan",
+    h1_gold: "Gold",
+    p_gold: "Uzbekistan ranks 4th in the world by gold reserves.",
+    h1_kurortlar: "Resorts",
+    p_kurortlar: "Uzbekistan is rich in balneological (therapeutic water) resorts: Chartak, Agalyk, Tashkent mineral waters, Chimgan.",
+    h1_metro: "Tashkent Metro",
+    p_metro: "Tashkent Metro is the first metro in the Central Asian region. Tashkent Metro is even better than Moscow’s.",
+    h1_qurol: "Armed Forces of Uzbekistan",
+    p_qurol: "The Armed Forces of Uzbekistan rank 58th among the strongest armies in the world. In Central Asia, Uzbekistan holds first place in military power, ahead of Kazakhstan, Kyrgyzstan, Tajikistan, and Turkmenistan.",
+    h1_muy: "Moy-Mubarak Madrasa",
+    p_muymuborak: "The oldest copy of the Quran is kept precisely in the Moy-Mubarak Madrasa, certified by UNESCO.",
+    p_yil: "Years of experience",
+    p_xursand: "Satisfied clients",
+    p_rating: "Overall rating",
+    p_sayohat: "BMB Global Sayohat is a travel company contributing to the development of domestic tourism in Uzbekistan and organizing overseas trips. The main focus is unique pilgrimage and cultural tours to major religious and historical centers of the country. BMB Global Sayohat is dedicated to the development of domestic and international tourism for tourists from Uzbekistan and abroad. Our company aims to promote national cultural heritage and create unforgettable experiences by organizing trips to key historical and religious landmarks of Uzbekistan. At the same time, we develop overseas travel programs that meet modern requirements and international standards, giving Uzbek tourists the opportunity to discover famous places around the world. Our services include pilgrimages to sacred sites, tours of cities like Samarkand, Bukhara, Khiva, as well as international tour packages tailored to each client's wishes. BMB Global Sayohat takes a comprehensive approach to tourism development, focusing on preserving cultural heritage, creating comfortable conditions for travelers, and developing innovative routes. Our company also offers extensive opportunities for access to unique destinations, joint promotion, and strengthening international tourist connections based on reliable partnerships. Thanks to high-quality service, professionalism, and a commitment to innovation, we invite you to new horizons of travel.",
+    h2_xavfsiz: "Comfortable and safe travel across Uzbekistan",
+    xotiralar: "Unforgettable memories, reliable service, and convenient tour packages — we will make your dream journey a reality.",
+    h4_tajriba: "Local experience and deep knowledge",
+    p_tajriba: "We know every corner of Uzbekistan. Ancient cities, historical monuments, natural wonders — in each of our trips, we help you feel not just a tourist but a guest.",
+    h4_xavfsiz: "Individual approach and comfortable service",
+    p_xavfsiz: "Every client is important to us. We develop individual travel programs based on your interests, comfort, and budget. Transport, accommodation, excursions — everything is adapted for you.",
+    h4_ishonch: "Reliable partner and safe journey",
+    p_ishonch: "Quality service, safety, and honesty are our top priorities. Thousands of travelers have chosen us and are satisfied. Now it’s your turn!",
+    h2_hotel: "Hotels",
+    p_hotel: "Hotels in all regions of the Republic of Uzbekistan",
+    tashkent_hotel: "Hotels in the city of Tashkent",
+    samarkand_hotel: "Hotels in Samarkand region",
+    bukhara_hotel: "Hotels in Bukhara region",
+    khiva_hotel: "Hotels in the city of Khiva",
+    btn_all: "All",
+    btn_all: "All",
+    h2_connect: "Contact us!",
+    btn_send: "Send",
+    div_xabar: "Message sent!",
+    div_error: "An error occurred.",
+    eko: "Eco-tourism",
+    umra: "Umrah pilgrimage",
+    viloyatlar: "Interregional tours",
+    xalqaro: "International tours"
 
   }
 };
@@ -401,3 +521,31 @@ const translations = {
     }
 
     setInterval(nextSlide, 3000); // Change every 5 seconds
+
+
+
+    //for tour.html
+    document.addEventListener("DOMContentLoaded", function () {
+  const hotelFilterTabs = document.querySelectorAll(".hotelFilter_tab");
+  const hotelFilterCards = document.querySelectorAll(".hotelFilter_card");
+
+  hotelFilterTabs.forEach(tab => {
+    tab.addEventListener("click", function () {
+      // Remove active class from all tabs
+      hotelFilterTabs.forEach(t => t.classList.remove("hotelFilter_active"));
+
+      // Add active class to clicked tab
+      this.classList.add("hotelFilter_active");
+
+      const selectedType = this.getAttribute("data-type");
+
+      hotelFilterCards.forEach(card => {
+        if (selectedType === "all" || card.getAttribute("data-type") === selectedType) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+});
