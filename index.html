@@ -1,502 +1,521 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="/style/style.css" />
-    <title>Global Sayohat</title>
-    <script src="/script/mapdata.js"></script>
-    <script src="/script/countrymap.js"></script>
-  </head>
-<!-- ...head as before... -->
-<body>
-  <nav>
-    <div class="nav__header">
-      <div class="nav__logo">
-        <a href="index.html" class="logo">
-          <img width="80" height="80" src="/assets/global sayohat.png" alt="">
-        </a>
-      </div>
-      <div class="nav__menu__btn" id="menu-btn">
-        <i class="ri-menu-line"></i>
-      </div>
-    </div>
-    <ul class="nav__links" id="nav-links">
-      <li><a data-translate="main_nav" href="index.html">ASOSIY</a></li>
-      <li><a data-translate="about_nav" href="about.html">BIZ HAQIMIZDA</a></li>
-      <li><a data-translate="tour_nav" href="tour.html">TUR PAKETLAR</a></li>
-      <li><a data-translate="hotel_nav" href="hotel.html">MEHMONXONALAR</a></li>
-      <li><a data-translate="contact_nav" href="contact.html">BOG'LANISH</a></li>
-      <li><a data-translate="book_nav" href="contact.html">Sayohatni bron qilish</a></li>
-    </ul>
-    <div class="nav__btns">
-      <!-- <button class="btn" data-translate="bron">BRON QILISH</button> -->
-    </div>
-  </nav>
-
-  <div id="langSwitcher">
-    <button onclick="setLang('uz')">🇺🇿</button>
-    <button onclick="setLang('ru')">🇷🇺</button>
-    <button onclick="setLang('en')">🇺🇸</button>
-  </div>
-
-  <header id="home">
-    <div class="header__container">
-      <div class="header__content">
-        <p data-translate="index1">SAYOHATINGIZNI yangi bosqichga olib chiqing</p>
-        <h1 data-translate="index2">O‘zbekiston sehrini his eting!</h1>
-        <div class="header__btns">
-          <a style="text-decoration: none; background: none;" href="contact.html"><button class="btn" data-translate="index3">Hozir band qilish</button></a>
-          <a href="https://youtu.be/mk68RcnQVq4?si=wPyiStwlqlGKgNWK">
-            <span><i class="ri-play-circle-fill"></i></span>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+      <link rel="stylesheet" href="/style/style.css" />
+      <title>Global Sayohat</title>
+      <script src="/script/mapdata.js"></script>
+      <script src="/script/countrymap.js"></script>
+    </head>
+  <!-- ...head as before... -->
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html" class="logo">
+            <img width="80" height="80" src="/assets/global sayohat.png" alt="">
           </a>
         </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
       </div>
-      <div class="header__image">
-        <img src="assets/header.png" alt="header" />
+      <ul class="nav__links" id="nav-links">
+        <li><a data-translate="main_nav" href="index.html">ASOSIY</a></li>
+        <li><a data-translate="about_nav" href="about.html">BIZ HAQIMIZDA</a></li>
+        <li><a data-translate="tour_nav" href="tour.html">TUR PAKETLAR</a></li>
+        <li><a data-translate="hotel_nav" href="hotel.html">MEHMONXONALAR</a></li>
+        <li><a data-translate="contact_nav" href="contact.html">BOG'LANISH</a></li>
+        <li><a data-translate="book_nav" href="contact.html">Sayohatni bron qilish</a></li>
+      </ul>
+      <div class="nav__btns">
+        <!-- <button class="btn" data-translate="bron">BRON QILISH</button> -->
       </div>
-    </div>
-  </header>
-  
-  <div class="tour-container" id="tourContainer">
-    <!-- Cards -->
-    <div class="tour-card" onclick="showDetails(this)" data-title="Tarixiy va Madaniy turizm" data-desc="O‘zbekiston – buyuk sivilizatsiyalar markazi, boy tarixiy merosga ega yurtdir.
-Samarqand, Buxoro va Xiva kabi shaharlar dunyo tamaddunining durdonalaridan hisoblanadi.
-Bu yo‘nalish bo‘yicha sayohatlar qadimiy obidalar, madaniyat va urf-odatlar bilan tanishtiradi.
-Har bir qadamingiz sizni ming yillik tarix bilan yuzlashtiradi." data-img="assets/madaniy_tur.jpg">
-      <img class="tour-image" src="assets/madaniy_tur.jpg" alt="Mountain Tour">
-      <div class="tour-title" data-translate="tarvamad">Tarixiy va madaniy turizm</div>
-    </div>
+    </nav>
 
-    <div class="tour-card" onclick="showDetails(this)" data-title="Ziyorat Turizmi" data-desc="O‘zbekiston islom olamining muqaddas maskanlaridan biridir.
-Imom Buxoriy, Imom Termiziy, Bahouddin Naqshband kabi zotlar qadamjolari ziyorat etiladi.
-Ziyorat turizmi ruhiy poklanish, ma’naviy tajriba va qadriyatlar bilan boyitadi.
-Bu yo‘nalish musulmon sayyohlar uchun alohida ahamiyat kasb etadi." data-img="assets/ziyorat.jpg">
-      <img class="tour-image" src="assets/ziyorat.jpg" alt="Beach Tour">
-      <div class="tour-title" data-translate="ziyorat">Ziyorat Turizmi</div>
+    <div id="langSwitcher">
+      <button onclick="setLang('uz')">🇺🇿</button>
+      <button onclick="setLang('ru')">🇷🇺</button>
+      <button onclick="setLang('en')">🇺🇸</button>
     </div>
 
-    <div class="tour-card" onclick="showDetails(this)" data-title="Eko Turizmi" data-desc="O‘zbekiston tabiati – cho‘llar, tog‘lar, ko‘llar va milliy bog‘lar bilan boy.
-Eko turizm tabiat qo‘ynida hordiq chiqarish va ekologik ongni shakllantirish imkonini beradi.
-Sayyohlar tog‘larda yurish, qushlarni kuzatish va mahalliy hayot tarzini o‘rganishadi.
-Bu sog‘lom va barqaror dam olishni istovchilar uchun ideal tanlovdir.
-
-" data-img="assets/eko_tur.jpg">
-      <img class="tour-image" src="assets/eko_tur.jpg" alt="Desert Tour">
-      <div class="tour-title" data-translate="eko_tur">Eko Turizmi</div>
-    </div>
-
-    <div class="tour-card" onclick="showDetails(this)" data-title="Tibbiyot Turizmi" data-desc="O‘zbekiston tibbiyot sohasida tez rivojlanayotgan, raqobatbardosh xizmatlarni taklif etuvchi mamlakatdir.
-Stomatologiya, oftalmologiya, kardiologiya va boshqa sohalarda yuqori malakali xizmatlar mavjud.
-Tibbiyot turizmi sifatli davolanish va yengil narxlar uyg‘unligidir.
-Bemorlar davolanish bilan birga mamlakat bilan ham tanishish imkoniyatiga ega bo‘ladilar.
-
-" data-img="assets/tibbiy_tur.png">
-      <img class="tour-image" src="assets/tibbiy_tur.png" alt="Forest Tour">
-      <div class="tour-title" data-translate="tibbiyot_tur">Tibbiyot Turizmi</div>
-    </div>
-
-    <div class="tour-card" onclick="showDetails(this)" data-title="Ichki Turizm" data-desc="O‘zbekiston fuqarolari uchun o‘z yurtini kashf etish imkoniyatlari kengaymoqda.
-Mahalliy sayyohlar uchun maxsus yo‘nalishlar, ekskursiyalar va tur paketlar taklif qilinmoqda.
-Ichki turizm oilaviy dam olish, tarixiy joylarga tashrif va tabiat qo‘ynida sayr qilishni o‘z ichiga oladi.
-Bu nafaqat dam olish, balki vatan bilan faxrlanish hissini ham mustahkamlaydi." data-img="assets/ichki turizm.jpg">
-      <img class="tour-image" src="assets/ichki turizm.jpg" alt="City Tour">
-      <div class="tour-title" data-translate="ichki_tur">Ichki Turizm</div>
-    </div>
-
-    <div class="tour-card" onclick="showDetails(this)" data-title="Viza Yordami" data-desc="Biz xorijlik sayyohlar uchun viza olish jarayonida to‘liq ko‘maklashamiz.
-Rasmiy taklifnoma, hujjatlarni tayyorlash va maslahat xizmatlari ko‘rsatiladi.
-Vizovaya podderjka – sizning O‘zbekistonga safaringizdagi birinchi va eng muhim qadamingiz.
-Ishonchli va tezkor xizmatlarimiz bilan har bir mijozimizni mamnun etamiz." data-img="assets/visa_pass.png">
-      <img class="tour-image" src="assets/visa_pass.png" alt="Island Tour">
-      <div class="tour-title" data-translate="viza_yor">Viza Yordami</div>
-    </div>
-  </div>
-
-  <!-- Shared Tour Details Element -->
-  <div class="tour-details" id="tourDetails">
-    <img id="detailsImg" src="" alt="">
-    <div class="details-text">
-      <div class="details-title" id="detailsTitle"></div>
-      <div class="details-description" id="detailsDesc"></div>
-    </div>
-  </div>
-  
-
-  <section class="section__container journey__container" id="tour">
-    <!-- <h2 class="section__header" data-translate="facts_title">O‘zbekiston Haqida Qiziqarli Faktlar</h2>
-    <div class="journey__grid">
-      <div class="journey__card">
-        <div class="journey__card__bg">
-          <span><i class="ri-bookmark-3-line"></i></span>
-          <h4 data-translate="fact_metro_title">Toshkent metropoliteni</h4>
-        </div>
-        <div class="journey__card__content">
-          <span><i class="ri-bookmark-3-line"></i></span>
-          <h4 data-translate="fact_metro_title">Toshkent metropoliteni</h4>
-          <p data-translate="fact_metro_descr">Toshkent metropoliteni — Markaziy Osiyo mintaqasidagi birinchi metro hisoblanadi.</p>
-        </div>
-      </div>
-      <div class="journey__card">
-        <div class="journey__card__bg">
-          <span><i class="ri-landscape-fill"></i></span>
-          <h4 data-translate="fact_army_title">O‘zbekiston qurolli kuchlari</h4>
-        </div>
-        <div class="journey__card__content">
-          <span><i class="ri-landscape-fill"></i></span>
-          <h4 data-translate="fact_army_title">O‘zbekiston qurolli kuchlari</h4>
-          <p data-translate="fact_army_descr">Markaziy Osiyo mintaqasida esa O‘zbekiston harbiy qudrati bo‘yicha birinchi o‘rinda turadi — Qozog‘iston, Qirg‘iziston, Tojikiston va Turkmanistondan oldinda.</p>
-        </div>
-      </div>
-      <div class="journey__card">
-        <div class="journey__card__bg">
-          <span><i class="ri-map-2-line"></i></span>
-          <h4 data-translate="fact_oldcity_title">O‘zbekistonning qadimiy shahri</h4>
-        </div>
-        <div class="journey__card__content">
-          <span><i class="ri-map-2-line"></i></span>
-          <h4 data-translate="fact_oldcity_title">O‘zbekistonning qadimiy shahri</h4>
-          <p data-translate="fact_oldcity_descr">O‘zbekistonning eng qadimiy shahri Samarqand — Rim shahri bilan tengdosh hisoblanadi.</p>
-        </div>
-      </div>
-    </div> -->
-
-<!--     
-
-    <div class="journey__grid">
-      <div class="journey__card">
-        <div class="journey__card__bg">
-          <span><i class="ri-bookmark-3-line"></i></span>
-          <h4 data-translate="fact_people_title">Oʻzbek xalqi haqida qisqacha</h4>
-        </div>
-
-        <div class="journey__card__content">
-          <span><i class="ri-bookmark-3-line"></i></span>
-          <h4 data-translate="fact_people_title">Oʻzbek xalqi haqida qisqacha</h4>
-          <p data-translate="fact_people_descr">Oʻzbekiston koʻp millatli davlat. Aholining asosiy qismini (71% dan ortigʻini) oʻzbeklar tashkil etadi. Ular janubiy yevropoid irqiga mansub boʻlib, tarkibida mongoloid unsurlar ham mavjud.</p>
-        </div>
-      </div>
-      <div class="journey__card">
-        <div class="journey__card__bg">
-          <span><i class="ri-landscape-fill"></i></span>
-          <h4 data-translate="fact_langs_title">Oʻzbekistondagi tillar</h4>
-        </div>
-        <div class="journey__card__content">
-          <span><i class="ri-landscape-fill"></i></span>
-          <h4 data-translate="fact_langs_title">Oʻzbekistondagi tillar</h4>
-          <p data-translate="fact_langs_descr">Oʻzbekistonda davlat tili — oʻzbek tili. Rus tili keng tarqalgan, ayrim hududlarda tojik tili ham ishlatiladi.</p>
-        </div>
-      </div>
-      <div class="journey__card">
-        <div class="journey__card__bg">
-          <span><i class="ri-map-2-line"></i></span>
-          <h4 data-translate="fact_population_title">Oʻzbekiston aholisi tarkibi</h4>
-        </div>
-        <div class="journey__card__content">
-          <span><i class="ri-map-2-line"></i></span>
-          <h4 data-translate="fact_population_title">Oʻzbekiston aholisi tarkibi</h4>
-          <p data-translate="fact_population_descr">Oʻzbekistonda qozoq, qirgʻiz, turkman, uygʻur, tatar, tojik (4,7%), rus va boshqa xalqlar (16%) yashaydi. Shuningdek, koreys, arab, loʻli, yahudiy va boshqalar ham bor. Aholi soni tez ortmoqda.</p>
-        </div>
-      </div>
-    </div>
-    <div class="journey__grid">
-      <div class="journey__card">
-        <div class="journey__card__bg">
-          <span><i class="ri-bookmark-3-line"></i></span>
-          <h4 data-translate="fact_climate_title">Oʻzbekiston iqlimi</h4>
-        </div>
-        <div class="journey__card__content">
-          <span><i class="ri-bookmark-3-line"></i></span>
-          <h4 data-translate="fact_climate_title">Oʻzbekiston iqlimi</h4>
-          <p data-translate="fact_climate_descr">Oʻzbekiston iqlimi kontinental: issiq yoz, sovuq qish. Yogʻin kam, asosan bahor va qishda. Sayohat uchun eng qulay fasllar — bahor va kuz.</p>
-        </div>
-      </div>
-      <div class="journey__card">
-        <div class="journey__card__bg">
-          <span><i class="ri-landscape-fill"></i></span>
-          <h4 data-translate="fact_tashkent_title">Toshkent haqida</h4>
-        </div>
-        <div class="journey__card__content">
-          <span><i class="ri-landscape-fill"></i></span>
-          <h4 data-translate="fact_tashkent_title">Toshkent haqida</h4>
-          <p data-translate="fact_tashkent_descr">Toshkent — Oʻzbekiston poytaxti va eng yirik shahri. 2000 yillik tarixga ega, iqtisodiy va madaniy markaz. Bu yerda 3 millionga yaqin aholi yashaydi.</p>
-        </div>
-      </div>
-      <div class="journey__card">
-        <div class="journey__card__bg">
-          <span><i class="ri-map-2-line"></i></span>
-          <h4 data-translate="fact_tashkentdistricts_title">Toshkent shahri tumanlari</h4>
-        </div>
-        <div class="journey__card__content">
-          <span><i class="ri-map-2-line"></i></span>
-          <h4 data-translate="fact_tashkentdistricts_title">Toshkent shahri tumanlari</h4>
-          <p data-translate="fact_tashkentdistricts_descr">Toshkent shahri 11 ta tumanlardan iborat: Olmazor, Bektemir, Mirobod, Mirzo Ulug‘bek, Sergeli, Chilonzor, Shayxontohur, Yunusobod, Yakkasaroy, Yashnobod, Uchtepa.</p>
-        </div>
-      </div>
-    </div> -->
-  </section>
-
-  <!-- <div class="slider">
-    <div class="slide active" style="background-image: url('/assets/gold_mimng.jpg')">
-      <div class="info">
-        <h1 data-translate="h1_gold">Oltin</h1>
-        <p data-translate="p_gold">Oltin zaxiralari bo‘yicha O‘zbekiston dunyoda 4-o‘rinda turadi.
-          <br>Uran zaxiralari bo‘yicha O‘zbekiston 7-o‘rinda.
-          <br>Mis zaxiralari bo‘yicha O‘zbekiston 10-o‘rinda.
-          <br>Tabiiy gaz qazib olish bo‘yicha O‘zbekiston dunyoda 8-o‘rinda turadi.</p>
-      </div>
-    </div>
-    <div class="slide" style="background-image: url('/assets/chimyon1.jpeg')">
-      <div class="info">
-        <h1 data-translate="h1_kurortlar">Kurortlar</h1>
-        <p data-translate="p_kurortlar">O‘zbekiston boy balneologik (suv bilan davolovchi) kurortlarga ega: Chortoq, Ag‘aliq, Toshkent mineral suvlari, Chimyon.</p>
-      </div>
-    </div>
-    <div class="slide" style="background-image: url('/assets/metro.png')">
-      <div class="info">
-        <h1 data-translate="h1_metro">Toskent metrosi</h1>
-        <p data-translate="p_metro">Toshkent metropoliteni — Markaziy Osiyo mintaqasidagi birinchi metro hisoblanadi.<br>Toshkent metrosi hatto Moskva metrosidan ham zo‘r.</p>
-      </div>
-    </div>
-    <div class="slide" style="background-image: url('/assets/uzb_military.jpg')">
-      <div class="info">
-        <h1 data-translate="h1_qurol">O‘zbekiston Qurolli Kuchlari</h1>
-        <p data-translate="p_qurol">O‘zbekiston Qurolli Kuchlari dunyodagi eng kuchli armiyalar reytingida 58-o‘rinni egallaydi. Markaziy Osiyo doirasida esa O‘zbekiston harbiy kuch bo‘yicha birinchi o‘rinda turadi, Qozog‘iston, Qirg‘iziston, Tojikiston va Turkmanistondan o‘zib ketgan.</p>
-      </div>
-    </div>
-    <div class="slide" style="background-image: url('/assets/quran1.jpg')">
-      <div class="info">
-        <h1 data-translate="h1_muy">Muy-Muborak madrasasi</h1>
-        <p data-translate="p_muymuborak"></p>
-      </div>
-    </div>
-  </div> -->
-
-  <section class="section__container showcase__container" id="package">
-    <div class="showcase__image">
-      <img src="assets/tourist_girl.jpg" alt="showcase" />
-    </div>
-    <div class="showcase__content">
-      <h4 data-translate="showcase_title">O‘ZBEKISTON</h4>
-      <p data-translate="showcase_descr1">
-        O‘zbekistonning rasmiy nomi — O‘zbekiston Respublikasi. Uning poytaxti — Toshkent shahri. Mamlakatning umumiy hududi 447,4 ming kvadrat kilometrni tashkil qiladi. Davlat tuzumi huquqiy demokratik tizim asosida qurilgan.
-        2015-yilgi ma’lumotlarga ko‘ra, aholi soni 37,7 million kishini tashkil etadi. 2025-yilga kelib, mehnatga layoqatli aholining ulushi umumiy aholining 60,5 foizini tashkil etishi kutilmoqda.
-        Respublikaning davlat tili — o‘zbek tili. Davlat rahbari — Prezident Shavkat Miromonovich Mirziyoyev. Pul birligi — O‘zbekiston so‘mi.
-        O‘zbekiston GMT +5 vaqt zonasida joylashgan. Mamlakatning xalqaro telefon kodi +998, internetdagi yuqori darajadagi domeni esa “.uz” hisoblanadi. Elektr tarmog‘ining kuchlanishi 220 volt, chastotasi esa 50 Gts. O‘zbekistonda avtomobillar harakati o‘ng tomonlama hisoblanadi.
-      </p>
-      <p data-translate="showcase_descr2">
-        O‘zbekistonda boshqa turkiy tillarda so‘zlashuvchi xalqlar vakillari ham yashaydi. Ular qatoriga qozoqlar, qirg‘izlar, turkmanlar, uyg‘urlar va tatarlar kiradi. Bundan tashqari, respublikada fors tillari guruhiga mansub til — tojik tilida so‘zlashuvchi tojiklar katta jamoani tashkil etadi (taxminan 4,7%).
-        Aholining muhim qismini ruslar va rus tilida so‘zlashuvchi boshqa xalqlar tashkil qiladi. Ularning umumiy ulushi respublika aholining qariyb 16 foiziga teng. Shuningdek, O‘zbekistonda koreyslar, arablar, Markaziy Osiyo lo‘lilari, yahudiylar, nemislar va boshqa ko‘plab millat vakillari ham istiqomat qiladi.
-        Umuman olganda, O‘zbekiston aholisi soni yildan-yilga tez sur’atlarda ortib bormoqda.
-      </p>
-      <div class="showcase__btn">
-        <button class="btn" data-translate="showcase_btn">
-          Hoziroq band qiling!
-          <span><i class="ri-arrow-right-line"></i></span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  
-
-  <div class="map">
-    <div id="map"></div>
-  </div>
-
-  <section class="section__container client__container">
-    <h2 class="section__header" data-translate="client_header">Minglab sayohatchilar tomonidan sevib tanlangan</h2>
-    <p class="section__description" data-translate="client_descr">
-      Sayohatga oshno qalblar va unutilmas xotiralar haqidagi hikoyalarni bizning qadrli mijozlarimiz nigohi orqali kashf eting.
-    </p>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="client__card">
-            <div class="client__content">
-              <div class="client__rating">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-              </div>
-              <p data-translate="client1_text">
-                Skywings has completely transformed my travel experience. From
-                finding hidden gems in bustling cities to discovering serene
-                retreats off the beaten path, every detail was thoughtfully
-                arranged. I can't recommend Skywings enough for anyone looking
-                to elevate their travel experience!
-              </p>
-            </div>
-            <div class="client__details">
-              <img src="assets/client-1.jpg" alt="client" />
-              <div>
-                <h4 data-translate="client1_name">Abdurahmon Vahobboyev</h4>
-                <h5 data-translate="client1_title">Sayohat blogeri</h5>
-              </div>
-            </div>
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p data-translate="index1">SAYOHATINGIZNI yangi bosqichga olib chiqing</p>
+          <h1 data-translate="index2">O‘zbekiston sehrini his eting!</h1>
+          <div class="header__btns">
+            <a style="text-decoration: none; background: none;" href="contact.html"><button class="btn" data-translate="index3">Hozir band qilish</button></a>
+            <a href="https://youtu.be/mk68RcnQVq4?si=wPyiStwlqlGKgNWK">
+              <span><i class="ri-play-circle-fill"></i></span>
+            </a>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="client__card">
-            <div class="client__content">
-              <div class="client__rating">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-              </div>
-              <p data-translate="client2_text">
-                My recent adventure with Skywings was nothing short of
-                spectacular. The personalized itineraries and recommendations
-                they provided led me to extraordinary locations that I would
-                never have found on my own. I'm already planning my next
-                adventure with them!
-              </p>
-            </div>
-            <div class="client__details">
-              <img src="assets/client-2.jpg" alt="client" />
-              <div>
-                <h4 data-translate="client2_name">Muhammadiyor Shokirov</h4>
-                <h5 data-translate="client2_title">Sarguzasht ishqibozi</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="client__card">
-            <div class="client__content">
-              <div class="client__rating">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-              </div>
-              <p data-translate="client3_text">
-                Skywings offered a transformative experience for my research
-                into historical landmarks. The unique aerial perspectives and
-                provided a new level of appreciation and insight into the
-                sites I studied. I highly recommend their services to fellow
-                historians and cultural enthusiasts.
-              </p>
-            </div>
-            <div class="client__details">
-              <img src="assets/client-3.jpg" alt="client" />
-              <div>
-                <h4 data-translate="client3_name">Doniyor Sohibov</h4>
-
-
-                <h5 data-translate="client3_title">Sportchi</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="client__card">
-            <div class="client__content">
-              <div class="client__rating">
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-                <span><i class="ri-star-fill"></i></span>
-              </div>
-              <p data-translate="client4_text">
-                Finding a balance between work and travel can be challenging,
-                but Skywings made it effortless. Their efficient planning and
-                excellent recommendations helped me maximize my downtime and
-                enjoy every moment of my trip. I look forward to working with
-                them again on future travels.
-              </p>
-            </div>
-            <div class="client__details">
-              <img src="assets/client-4.jpg" alt="client" />
-              <div>
-                <h4 data-translate="client4_name">Ruslan Aleksandrov</h4>
-                <h5 data-translate="client4_title">Biznes rahbari</h5>
-              </div>
-            </div>
-          </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <footer id="contact">
-    <div class="section__container footer__container">
-      <div class="footer__col">
-        <div class="footer__logo">
-          <a href="#" class="logo" data-translate="footer_logo">Global Sayohat</a>
-        </div>
-        <p data-translate="footer_descr">
-          O‘zbekistonni osongina va zavq bilan kashf eting — bizning keng qamrovli sayohat platformamiz orqali. Sayohatingiz aynan shu yerda boshlanadi — bu yerda qulay rejalashtirish unutilmas taassurotlar bilan uyg‘unlashadi.
+    
+    
+    <div class="tour-container" id="tourContainer">
+      <!-- Cards -->
+      <div class="tour-card" onclick="showDetails(this)" data-title="Tarixiy va Madaniy turizm" data-desc="O‘zbekiston qadimiy sivilizatsiyalarning chorrahasi bo‘lib, boy tarixiy va madaniy merosga ega bo‘lgan davlat sifatida e’tirof etiladi. Bu yurtda qadim zamonlardan boshlab buyuk imperiyalar, savdo yo‘llari va madaniy markazlar shakllangan. Tarixiy va madaniy turizm O‘zbekistonga tashrif buyurayotgan mehmonlarga nafaqat diqqatga sazovor joylarni ko‘rish, balki o‘tmish madaniyati bilan yaqindan tanishish imkonini beradi.
+
+  Samarqand, Buxoro, Xiva va Termiz kabi shaharlar dunyo tarixidagi eng qadimiy shaharlardan hisoblanadi. Samarqanddagi Registon majmuasi, Shohi Zinda maqbaralari, Ulug‘bek rasadxonasi, Buxorodagi Ark qal'asi, Poyi Kalon ansambli, Xivadagi Ichan qal'a va boshqa ko‘plab obidalar o‘zining noyob me‘morchiligi, tarixiy ahamiyati va jahon madaniy merosiga qo‘shgan hissasi bilan mashhurdir.
+
+  Tarixiy turizm nafaqat qadimiy binolarni tomosha qilish, balki o‘sha davr hayoti, urf-odatlari, san‘at va hunarmandchilik namunalarini o‘rganish imkoniyatini ham beradi. Masalan, Buxorodagi qadimiy bozorlar, kulollar mahallasi, ipakchilik ustaxonalari va boshqa hunarmandlar markazlari sayyohlarga madaniy merosni jonli ko‘rinishda taqdim etadi.
+
+  Madaniy turizm esa teatr, musiqa, raqs san‘ati, milliy taomlar, liboslar va xalq urf-odatlari orqali millat ruhiyatini anglash imkonini beradi. O‘zbekistonning turli hududlarida o‘tkaziladigan festivallar, xalq bayramlari, sayillar va konsertlar tashrif buyuruvchilarda unutilmas taassurot qoldiradi. Sharq taronalari xalqaro musiqa festivali, Navro‘z umumxalq bayrami, Ipak va ziravorlar festivali kabi tadbirlar orqali sayyohlar milliy ruh va an‘analarning naqadar chuqur ildiz otganiga guvoh bo‘ladilar.
+
+  Bundan tashqari, O‘zbekistondagi tarixiy obidalar YUNESKOning Butunjahon madaniy merosi ro‘yxatiga kiritilgan bo‘lib, bu ularning jahon ahamiyatiga ega ekanligini tasdiqlaydi. Tarixiy va madaniy turizm O‘zbekistonga kelgan har bir mehmon uchun nafaqat bilim, balki ruhiy boylik manbai hisoblanadi. Bu yo‘nalish turizmning barqaror rivojlanishiga xizmat qiladi hamda mahalliy aholi bandligini ta'minlaydi.
+
+  Qisqacha aytganda, O‘zbekiston tarixiy va madaniy turizm uchun bebaho manba hisoblanadi. Har bir shahar, har bir obida, har bir an‘ana o‘zida ming yillik tarix va xalq ruhiyatini aks ettiradi. Bu esa sayyohlarga nafaqat tomosha qilish, balki his qilish imkonini ham beradi. Tarixni o‘z ko‘zi bilan ko‘rish, uni yurak bilan his qilish esa O‘zbekistonni boshqa davlatlardan ajratib turadigan eng asosiy jihatlardan biridir." data-img="assets/madaniy_tur.jpg">
+        <img class="tour-image" src="assets/madaniy_tur.jpg" alt="Mountain Tour">
+        <div class="tour-title" data-translate="tarvamad">Tarixiy va madaniy turizm</div>
+      </div>
+
+      <div class="tour-card" onclick="showDetails(this)" data-title="Ziyorat Turizmi" data-desc="Ziyorat turizmi – O‘zbekistonda turizmning eng muhim va istiqbolli yo‘nalishlaridan biridir. Yurtimiz butun islom olami uchun muqaddas qadamjolar, aziz-avliyolar maqbaralari va tarixiy diniy markazlarga boy. Bu yo‘nalishdagi sayohatlar nafaqat diniy e‘tiqod bilan bog‘liq, balki ma‘naviy poklanish, ichki dunyoni boyitish, sabr-qanoat va saboqlarga to‘la ruhiy tajriba bo‘lishi bilan ajralib turadi.
+
+  O‘zbekiston hududida yashab o‘tgan mashhur muhaddislar, faqihlar va tasavvuf olimlarining yodgorliklari bugungi kunda musulmon dunyosidan kelayotgan minglab sayyohlarni o‘ziga jalb qilmoqda. Imom Buxoriy, Imom Termiziy, Bahouddin Naqshband, Shayx Zayniddin, Abduholiq G‘ijduvoniy kabi ulug‘ zotlarning maqbaralari xalqaro miqyosda e‘zozga loyiq maskanlardir.
+
+  Ziyorat turizmi doirasida tashrif buyuruvchilar qadimiy masjidlar, madrasalar va ziyoratgohlar bilan tanishibgina qolmay, balki u yerda ado etiladigan diniy marosimlarda, Qur'on tilovatlarida, zikr majlislarida ham ishtirok etishlari mumkin. Bu esa mehmonlarga o‘z e‘tiqodlariga yanada yaqinlashish, ma‘naviy jihatdan boyish va ruhiy taskin topish imkonini beradi.
+
+  Ziyorat turizmi nafaqat xorijiy musulmon mehmonlar, balki o‘zbek ziyoratchilar uchun ham juda muhimdir. Ayniqsa, muqaddas joylarga oilaviy safarlar, tarixiy yodgorliklar bilan tanishish, farzandlarga islomiy qadriyatlarni o‘rgatish nuqtai nazaridan katta ahamiyat kasb etadi.
+
+  Davlatimiz tomonidan bu yo‘nalishga alohida e‘tibor qaratilib, muqaddas qadamjolarda infratuzilma yangilanmoqda, yo‘llar, mehmonxonalar, xizmatlar sifati oshirilmoqda. Shu orqali ziyoratchilar uchun yanada qulay va xavfsiz muhit yaratilmoqda.
+
+  Xulosa qilib aytganda, ziyorat turizmi O‘zbekistonda diniy-ma‘naviy merosni asrab-avaylash, uni jahon miqyosida targ‘ib qilish hamda milliy ruhiyatni mustahkamlashda muhim vosita bo‘lib xizmat qilmoqda." data-img="assets/ziyorat.jpg">
+        <img class="tour-image" src="assets/ziyorat.jpg" alt="Beach Tour">
+        <div class="tour-title" data-translate="ziyorat">Ziyorat Turizmi</div>
+      </div>
+
+      <div class="tour-card" onclick="showDetails(this)" data-title="Eko Turizmi" data-desc="Eko turizm – bu tabiat qo‘ynida hordiq chiqarish, ekologik madaniyatni oshirish va tabiiy resurslarni asrab-avaylashni targ‘ib etuvchi turizm yo‘nalishi. O‘zbekiston o‘zining boy va xilma-xil tabiiy landshaftlari, tog‘lari, cho‘llari, o‘rmonlari, ko‘llari va daryolari bilan ekoturizm uchun katta imkoniyatlarga ega.
+
+  Yurtimiz hududida Chotqol, Hisor, Zarafshon tog‘ tizmalari, Qizilqum va Qoraqum cho‘llari, Aralbo‘yi hududi, Amudaryo va Sirdaryo vodiysi kabi noyob tabiiy hududlar mavjud. Bu joylar nafaqat go‘zalligi, balki o‘ziga xos hayvonot va o‘simlik dunyosi bilan ham qimmatli.
+
+  Ekoturizm doirasida sayyohlar uchun tog‘larda piyoda sayohatlar (trekking), tog‘ velosipedi, ot minish, qushlarni kuzatish (birdwatching), baliq ovlash, milliy tabiat bog‘lariga ekskursiyalar kabi faoliyatlar tashkil etiladi. Masalan, Ugom-Chotqol milliy tabiat bog‘ida noyob o‘simlik turlari, tog‘ echkilari, qor barslari kabi hayvonlarni uchratish mumkin.
+
+  Bundan tashqari, O‘zbekistonda ekologik turizm orqali mahalliy aholi turmush darajasini oshirish va ularning ekologik ongini rivojlantirishga qaratilgan loyihalar amalga oshirilmoqda. Mehmonlar mahalliy qishloqlarda yashab, o‘sha hududning an‘anaviy hayot tarzini o‘rganishlari, milliy taomlarni tatib ko‘rishlari, hunarmandchilik bilan shug‘ullanishlari mumkin.
+
+  Eko turizm shuningdek, global iqlim o‘zgarishi, tabiatni muhofaza qilish va bioxilma-xillikni saqlash masalalariga e‘tibor qaratishga yordam beradi. Bu turizm turi asosan kichik guruhlar va individual sayyohlar uchun qulay bo‘lib, ularning tabiatga ta‘siri minimal bo‘lishi uchun maxsus tashkil etiladi.
+
+  Xulosa qilib aytganda, eko turizm O‘zbekistonda kelajak avlod uchun tabiiy merosni saqlab qolish, ekologik madaniyatni targ‘ib qilish va sog‘lom turmush tarzini rivojlantirishda muhim o‘rin tutadi. Bu yo‘nalish nafaqat dam olish, balki ta‘lim va tarbiya jarayonining ham bir qismidir." data-img="assets/eko_tur.jpg">
+        <img class="tour-image" src="assets/eko_turizm.jpg" alt="Desert Tour">      <div class="tour-title" data-translate="eko_tur">Eko Turizmi</div>
+      </div>
+
+      <div class="tour-card" onclick="showDetails(this)" data-title="Tibbiyot Turizmi" data-desc="O‘zbekiston tibbiyot sohasida tez rivojlanayotgan, raqobatbardosh xizmatlarni taklif etuvchi mamlakatdir.
+  Stomatologiya, oftalmologiya, kardiologiya va boshqa sohalarda yuqori malakali xizmatlar mavjud.
+  Tibbiyot turizmi sifatli davolanish va yengil narxlar uyg‘unligidir.
+  Bemorlar davolanish bilan birga mamlakat bilan ham tanishish imkoniyatiga ega bo‘ladilar.
+
+  " data-img="assets/tibbiy_tur.png">
+        <img class="tour-image" src="assets/med_turizm.jpg" alt="Forest Tour">
+        <div class="tour-title" data-translate="tibbiyot_tur">Tibbiyot Turizmi</div>
+      </div>
+
+      <div class="tour-card" onclick="showDetails(this)" data-title="Ichki Turizm" data-desc="O‘zbekiston fuqarolari uchun o‘z yurtini kashf etish imkoniyatlari kengaymoqda.
+  Mahalliy sayyohlar uchun maxsus yo‘nalishlar, ekskursiyalar va tur paketlar taklif qilinmoqda.
+  Ichki turizm oilaviy dam olish, tarixiy joylarga tashrif va tabiat qo‘ynida sayr qilishni o‘z ichiga oladi.
+  Bu nafaqat dam olish, balki vatan bilan faxrlanish hissini ham mustahkamlaydi." data-img="assets/ichki turizm.jpg">
+        <img class="tour-image" src="assets/ichki turizm.jpg" alt="City Tour">
+        <div class="tour-title" data-translate="ichki_tur">Ichki Turizm</div>
+      </div>
+
+      <div class="tour-card" onclick="showDetails(this)" data-title="Viza Yordami" data-desc="" data-img="assets/visa_pass.png">
+        <img class="tour-image" src="assets/visa_pass.png" alt="Island Tour">
+        <div class="tour-title" data-translate="viza_yor">Viza Yordami</div>
+      </div>
+    </div>
+
+    <!-- Shared Tour Details Element -->
+    <div class="tour-details" id="tourDetails">
+      <img id="detailsImg" src="" alt="">
+      <div class="details-text">
+        <div class="details-title" id="detailsTitle"></div>
+        <div class="details-description" id="detailsDesc"></div>
+      </div>
+    </div>
+
+      <section class="section__container showcase__container" id="package">
+      <div class="showcase__image">
+        <img src="assets/tourist_girl.jpg" alt="showcase" />
+      </div>
+      <div class="showcase__content">
+        <h4 data-translate="showcase_title">O‘ZBEKISTON</h4>
+        <p data-translate="showcase_descr1">
+          O‘zbekistonning rasmiy nomi — O‘zbekiston Respublikasi. Uning poytaxti — Toshkent shahri. Mamlakatning umumiy hududi 447,4 ming kvadrat kilometrni tashkil qiladi. Davlat tuzumi huquqiy demokratik tizim asosida qurilgan.
+          2015-yilgi ma’lumotlarga ko‘ra, aholi soni 37,7 million kishini tashkil etadi. 2025-yilga kelib, mehnatga layoqatli aholining ulushi umumiy aholining 60,5 foizini tashkil etishi kutilmoqda.
+          Respublikaning davlat tili — o‘zbek tili. Davlat rahbari — Prezident Shavkat Miromonovich Mirziyoyev. Pul birligi — O‘zbekiston so‘mi.
+          O‘zbekiston GMT +5 vaqt zonasida joylashgan. Mamlakatning xalqaro telefon kodi +998, internetdagi yuqori darajadagi domeni esa “.uz” hisoblanadi. Elektr tarmog‘ining kuchlanishi 220 volt, chastotasi esa 50 Gts. O‘zbekistonda avtomobillar harakati o‘ng tomonlama hisoblanadi.
         </p>
-        <ul class="footer__socials">
-          <li>
-            <a href="#"><i class="ri-telegram-fill"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/bmbglobalsayohat/?hl=en"><i class="ri-instagram-line"></i></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@bmbholding"><i class="ri-youtube-line"></i></a>
-          </li>
-        </ul>
+        <p data-translate="showcase_descr2">
+          O‘zbekistonda boshqa turkiy tillarda so‘zlashuvchi xalqlar vakillari ham yashaydi. Ular qatoriga qozoqlar, qirg‘izlar, turkmanlar, uyg‘urlar va tatarlar kiradi. Bundan tashqari, respublikada fors tillari guruhiga mansub til — tojik tilida so‘zlashuvchi tojiklar katta jamoani tashkil etadi (taxminan 4,7%).
+          Aholining muhim qismini ruslar va rus tilida so‘zlashuvchi boshqa xalqlar tashkil qiladi. Ularning umumiy ulushi respublika aholining qariyb 16 foiziga teng. Shuningdek, O‘zbekistonda koreyslar, arablar, Markaziy Osiyo lo‘lilari, yahudiylar, nemislar va boshqa ko‘plab millat vakillari ham istiqomat qiladi.
+          Umuman olganda, O‘zbekiston aholisi soni yildan-yilga tez sur’atlarda ortib bormoqda.
+        </p>
+        <div class="showcase__btn">
+          <a href="contact.html"><button class="btn" data-translate="showcase_btn">
+            Hoziroq band qiling!
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button></a>
+
+        </div>
       </div>
-      <div class="footer__col">
-        <h4 data-translate="footer_havola">Havola</h4>
-        <ul class="footer__links">
-          <li><a href="#" data-translate="footer_asosiy">ASOSIY</a></li>
-          <li><a href="#" data-translate="footer_tour">TUR PAKETLAR</a></li>
-          <li><a href="#" data-translate="footer_about">BIZ HAQIMIZDA</a></li>
-          <li><a href="#" data-translate="footer_hotel">MEHMONXONALAR</a></li>
-        </ul>
+    </section>
+    
+
+    <section class="section__container journey__container" id="tour">
+      <!-- <h2 class="section__header" data-translate="facts_title">O‘zbekiston Haqida Qiziqarli Faktlar</h2>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4 data-translate="fact_metro_title">Toshkent metropoliteni</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4 data-translate="fact_metro_title">Toshkent metropoliteni</h4>
+            <p data-translate="fact_metro_descr">Toshkent metropoliteni — Markaziy Osiyo mintaqasidagi birinchi metro hisoblanadi.</p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4 data-translate="fact_army_title">O‘zbekiston qurolli kuchlari</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4 data-translate="fact_army_title">O‘zbekiston qurolli kuchlari</h4>
+            <p data-translate="fact_army_descr">Markaziy Osiyo mintaqasida esa O‘zbekiston harbiy qudrati bo‘yicha birinchi o‘rinda turadi — Qozog‘iston, Qirg‘iziston, Tojikiston va Turkmanistondan oldinda.</p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4 data-translate="fact_oldcity_title">O‘zbekistonning qadimiy shahri</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4 data-translate="fact_oldcity_title">O‘zbekistonning qadimiy shahri</h4>
+            <p data-translate="fact_oldcity_descr">O‘zbekistonning eng qadimiy shahri Samarqand — Rim shahri bilan tengdosh hisoblanadi.</p>
+          </div>
+        </div>
+      </div> -->
+
+  <!--     
+
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4 data-translate="fact_people_title">Oʻzbek xalqi haqida qisqacha</h4>
+          </div>
+
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4 data-translate="fact_people_title">Oʻzbek xalqi haqida qisqacha</h4>
+            <p data-translate="fact_people_descr">Oʻzbekiston koʻp millatli davlat. Aholining asosiy qismini (71% dan ortigʻini) oʻzbeklar tashkil etadi. Ular janubiy yevropoid irqiga mansub boʻlib, tarkibida mongoloid unsurlar ham mavjud.</p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4 data-translate="fact_langs_title">Oʻzbekistondagi tillar</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4 data-translate="fact_langs_title">Oʻzbekistondagi tillar</h4>
+            <p data-translate="fact_langs_descr">Oʻzbekistonda davlat tili — oʻzbek tili. Rus tili keng tarqalgan, ayrim hududlarda tojik tili ham ishlatiladi.</p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4 data-translate="fact_population_title">Oʻzbekiston aholisi tarkibi</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4 data-translate="fact_population_title">Oʻzbekiston aholisi tarkibi</h4>
+            <p data-translate="fact_population_descr">Oʻzbekistonda qozoq, qirgʻiz, turkman, uygʻur, tatar, tojik (4,7%), rus va boshqa xalqlar (16%) yashaydi. Shuningdek, koreys, arab, loʻli, yahudiy va boshqalar ham bor. Aholi soni tez ortmoqda.</p>
+          </div>
+        </div>
       </div>
-      <div class="footer__col">
-        <h4 data-translate="footer_contact">Biz bilan bog'laning</h4>
-        <ul class="footer__links">
-          <li>
-            <a href="">
-              <span><i class="ri-phone-fill"></i></span>
-              <span data-translate="footer_phone">+998 95 873 00 07</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span><i class="ri-record-mail-line"></i></span>
-              <span data-translate="footer_email">info@globalsayohat</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span><i class="ri-map-pin-2-fill"></i></span>
-              <span data-translate="footer_address">Toshkent, Yakkasaroy tumani, Kichik halqa yo'li, 14-b-uy</span>
-            </a>
-          </li>
-        </ul>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4 data-translate="fact_climate_title">Oʻzbekiston iqlimi</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4 data-translate="fact_climate_title">Oʻzbekiston iqlimi</h4>
+            <p data-translate="fact_climate_descr">Oʻzbekiston iqlimi kontinental: issiq yoz, sovuq qish. Yogʻin kam, asosan bahor va qishda. Sayohat uchun eng qulay fasllar — bahor va kuz.</p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4 data-translate="fact_tashkent_title">Toshkent haqida</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4 data-translate="fact_tashkent_title">Toshkent haqida</h4>
+            <p data-translate="fact_tashkent_descr">Toshkent — Oʻzbekiston poytaxti va eng yirik shahri. 2000 yillik tarixga ega, iqtisodiy va madaniy markaz. Bu yerda 3 millionga yaqin aholi yashaydi.</p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4 data-translate="fact_tashkentdistricts_title">Toshkent shahri tumanlari</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4 data-translate="fact_tashkentdistricts_title">Toshkent shahri tumanlari</h4>
+            <p data-translate="fact_tashkentdistricts_descr">Toshkent shahri 11 ta tumanlardan iborat: Olmazor, Bektemir, Mirobod, Mirzo Ulug‘bek, Sergeli, Chilonzor, Shayxontohur, Yunusobod, Yakkasaroy, Yashnobod, Uchtepa.</p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- <div class="slider">
+      <div class="slide active" style="background-image: url('/assets/gold_mimng.jpg')">
+        <div class="info">
+          <h1 data-translate="h1_gold">Oltin</h1>
+          <p data-translate="p_gold">Oltin zaxiralari bo‘yicha O‘zbekiston dunyoda 4-o‘rinda turadi.
+            <br>Uran zaxiralari bo‘yicha O‘zbekiston 7-o‘rinda.
+            <br>Mis zaxiralari bo‘yicha O‘zbekiston 10-o‘rinda.
+            <br>Tabiiy gaz qazib olish bo‘yicha O‘zbekiston dunyoda 8-o‘rinda turadi.</p>
+        </div>
       </div>
+      <div class="slide" style="background-image: url('/assets/chimyon1.jpeg')">
+        <div class="info">
+          <h1 data-translate="h1_kurortlar">Kurortlar</h1>
+          <p data-translate="p_kurortlar">O‘zbekiston boy balneologik (suv bilan davolovchi) kurortlarga ega: Chortoq, Ag‘aliq, Toshkent mineral suvlari, Chimyon.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('/assets/metro.png')">
+        <div class="info">
+          <h1 data-translate="h1_metro">Toskent metrosi</h1>
+          <p data-translate="p_metro">Toshkent metropoliteni — Markaziy Osiyo mintaqasidagi birinchi metro hisoblanadi.<br>Toshkent metrosi hatto Moskva metrosidan ham zo‘r.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('/assets/uzb_military.jpg')">
+        <div class="info">
+          <h1 data-translate="h1_qurol">O‘zbekiston Qurolli Kuchlari</h1>
+          <p data-translate="p_qurol">O‘zbekiston Qurolli Kuchlari dunyodagi eng kuchli armiyalar reytingida 58-o‘rinni egallaydi. Markaziy Osiyo doirasida esa O‘zbekiston harbiy kuch bo‘yicha birinchi o‘rinda turadi, Qozog‘iston, Qirg‘iziston, Tojikiston va Turkmanistondan o‘zib ketgan.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('/assets/quran1.jpg')">
+        <div class="info">
+          <h1 data-translate="h1_muy">Muy-Muborak madrasasi</h1>
+          <p data-translate="p_muymuborak"></p>
+        </div>
+      </div>
+    </div> -->
+
+    
+    
+
+    <div class="map">
+      <div id="map"></div>
     </div>
-    <div class="footer__bar" data-translate="footer_copyright">
-      Mualliflik huquqi © 2025 Leno Agency. Barcha huquqlar himoyalangan.
-    </div>
-  </footer>
-<!-- ...scripts... -->
+
+    <section class="section__container client__container">
+      <h2 class="section__header" data-translate="client_header">Minglab sayohatchilar tomonidan sevib tanlangan</h2>
+      <p class="section__description" data-translate="client_descr">
+        Sayohatga oshno qalblar va unutilmas xotiralar haqidagi hikoyalarni bizning qadrli mijozlarimiz nigohi orqali kashf eting.
+      </p>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p data-translate="client1_text">
+                  Skywings has completely transformed my travel experience. From
+                  finding hidden gems in bustling cities to discovering serene
+                  retreats off the beaten path, every detail was thoughtfully
+                  arranged. I can't recommend Skywings enough for anyone looking
+                  to elevate their travel experience!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/Ella Madison.webp" alt="client" />
+                <div>
+                  <h4 data-translate="client1_name">Ella Madison</h4>
+                  <h5 data-translate="client1_title">Sayohat blogeri</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p data-translate="client2_text">
+                  My recent adventure with Skywings was nothing short of
+                  spectacular. The personalized itineraries and recommendations
+                  they provided led me to extraordinary locations that I would
+                  never have found on my own. I'm already planning my next
+                  adventure with them!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/Ben Harry.jpeg" alt="client" />
+                <div>
+                  <h4 data-translate="client2_name">Ben Harry</h4>
+                  <h5 data-translate="client2_title">Sarguzasht ishqibozi</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p data-translate="client3_text">
+                  Skywings offered a transformative experience for my research
+                  into historical landmarks. The unique aerial perspectives and
+                  provided a new level of appreciation and insight into the
+                  sites I studied. I highly recommend their services to fellow
+                  historians and cultural enthusiasts.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/nigeria_people.jpg" alt="client" />
+                <div>
+                  <h4 data-translate="client3_name">Mike Bryant</h4>
 
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script/script.js"></script>
-    <script src="script/functions.js"></script>
-  </body>
-</html>
+                  <h5 data-translate="client3_title">Sportchi</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p data-translate="client4_text">
+                  Finding a balance between work and travel can be challenging,
+                  but Skywings made it effortless. Their efficient planning and
+                  excellent recommendations helped me maximize my downtime and
+                  enjoy every moment of my trip. I look forward to working with
+                  them again on future travels.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/john_terry.jpg" alt="client" />
+                <div>
+                  <h4 data-translate="client4_name">John Terry</h4>
+                  <h5 data-translate="client4_title">Biznes rahbari</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo" data-translate="footer_logo">Global Sayohat</a>
+          </div>
+          <p data-translate="footer_descr">
+            O‘zbekistonni osongina va zavq bilan kashf eting — bizning keng qamrovli sayohat platformamiz orqali. Sayohatingiz aynan shu yerda boshlanadi — bu yerda qulay rejalashtirish unutilmas taassurotlar bilan uyg‘unlashadi.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-telegram-fill"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/bmbglobalsayohat/?hl=en"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@bmbholding"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-translate="footer_havola">Havola</h4>
+          <ul class="footer__links">
+            <li><a href="#" data-translate="footer_asosiy">ASOSIY</a></li>
+            <li><a href="#" data-translate="footer_tour">TUR PAKETLAR</a></li>
+            <li><a href="#" data-translate="footer_about">BIZ HAQIMIZDA</a></li>
+            <li><a href="#" data-translate="footer_hotel">MEHMONXONALAR</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-translate="footer_contact">Biz bilan bog'laning</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="">
+                <span><i class="ri-phone-fill"></i></span>
+                <span data-translate="footer_phone">+998 95 873 00 07</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span>
+                <span data-translate="footer_email">info@globalsayohat</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span>
+                <span data-translate="footer_address">Toshkent, Yakkasaroy tumani, Kichik halqa yo'li, 14-b-uy</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar" data-translate="footer_copyright">
+        Mualliflik huquqi © 2025 Leno Agency. Barcha huquqlar himoyalangan.
+      </div>
+    </footer>
+  <!-- ...scripts... -->
+
+
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="script/script.js"></script>
+      <script src="script/functions.js"></script>
+    </body>
+  </html>
