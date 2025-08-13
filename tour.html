@@ -38,6 +38,8 @@
       </div>
     </nav>
 
+    <div class="background"></div>
+
     <div id="langSwitcher">
       <button onclick="setLang('uz')">🇺🇿</button>
       <button onclick="setLang('ru')">🇷🇺</button>
@@ -160,13 +162,13 @@
           <li>
             <a href="">
               <span><i class="ri-phone-fill"></i></span>
-              <span data-translate="footer_phone">+998 95 381 50 05</span>
+              <span data-translate="footer_phone">+998 95 873 00 07</span>
             </a>
           </li>
           <li>
             <a href="#">
               <span><i class="ri-record-mail-line"></i></span>
-              <span data-translate="footer_email">info@globalsayohat</span>
+              <span data-translate="footer_email">globalsayohat@bmb-holding.uz</span>
             </a>
           </li>
           <li>
@@ -186,6 +188,32 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/lang.js"></script>
+    <script> document.addEventListener("DOMContentLoaded", function () {
+  const hotelFilterTabs = document.querySelectorAll(".hotelFilter_tab");
+  const hotelFilterCards = document.querySelectorAll(".hotelFilter_card");
+
+  hotelFilterTabs.forEach(tab => {
+    tab.addEventListener("click", function () {
+      // Remove active class from all tabs
+      hotelFilterTabs.forEach(t => t.classList.remove("hotelFilter_active"));
+
+      // Add active class to clicked tab
+      this.classList.add("hotelFilter_active");
+
+      const selectedType = this.getAttribute("data-type");
+
+      hotelFilterCards.forEach(card => {
+        if (selectedType === "all" || card.getAttribute("data-type") === selectedType) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+});
+</script>
     
 </body>
 </html>
