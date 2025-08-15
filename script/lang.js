@@ -111,7 +111,9 @@ const translations = {
       eko_tur: "Eko Turizmi",
       tibbiyot_tur: "Tibbiyot Turizmi",
       ichki_tur: "Ichki Turizm",
-      viza_yor: "Viza Yordami"
+      viza_yor: "Viza Yordami",
+      nine_day_trip: "Toshkent – Xiva (Urganch) – Buxoro – Samarqand – Toshkent viloyati",
+      nine_text: "9 kunduz 8 kecha"
     },
     ru: {
       main_nav: "ГЛАВНАЯ",
@@ -224,7 +226,10 @@ const translations = {
     eko_tur: "Экотуризм",
     tibbiyot_tur: "Медицинский туризм",
     ichki_tur: "Внутренний туризм",
-    viza_yor: "Визовая поддержка"
+    viza_yor: "Визовая поддержка",
+    nine_day_trip: "Ташкент – Самарканд – БухарaТашкент – Хива (Ургенч) – Бухара - Самарканд - Ташкентский  область",
+    nine_text: "9 дней 7 ночей"
+    
 
     },
     en: {
@@ -334,13 +339,13 @@ const translations = {
       viloyatlar: "Interregional tours",
       xalqaro: "International tours",
       tarvamad: "Historical and Cultural Tourism",
-    ziyorat: "Pilgrimage Tourism",
-    eko_tur: "Eco Tourism",
-    tibbiyot_tur: "Medical Tourism",
-    ichki_tur: "Domestic Tourism",
-    viza_yor: "Visa Assistance"
-
-
+      ziyorat: "Pilgrimage Tourism",
+      eko_tur: "Eco Tourism",
+      tibbiyot_tur: "Medical Tourism",
+      ichki_tur: "Domestic Tourism",
+      viza_yor: "Visa Assistance",
+      nine_day_trip: "Tashkent – Khiva (Urgench) – Bukhara – Samarkand – Tashkent region",
+      nine_text: "9 days 7 nights"
     }
   };
 
